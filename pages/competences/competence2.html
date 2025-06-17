@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Compétence 2 - Portfolio Lucas Lafosse</title>
+	<link rel="stylesheet" href="../../assets/css/competences.css">
+	<style>
+		/* Dark mode toggle CSS uniquement */
+		#theme-toggle:checked ~ body,
+		#theme-toggle:checked ~ body * {
+			--bg: #1a202c;
+			--bg-light: #2d3748;
+			--bg-card: #2d3748;
+			--text: #f7fafc;
+			--text-light: #cbd5e0;
+			--text-muted: #a0aec0;
+			--border: #4a5568;
+			--shadow: rgba(0, 0, 0, 0.3);
+		}
+		
+		/* Toggle switch styles */
+		.theme-switch {
+			position: fixed;
+			top: 1rem;
+			right: 1rem;
+			z-index: 1000;
+		}
+		
+		.theme-switch input {
+			display: none;
+		}
+		
+		.theme-switch label {
+			display: block;
+			width: 50px;
+			height: 50px;
+			background: var(--bg-card);
+			border: 2px solid var(--border);
+			border-radius: 50%;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.2rem;
+			transition: all 0.3s ease;
+			box-shadow: 0 2px 10px var(--shadow);
+		}
+		
+		.theme-switch label:hover {
+			transform: scale(1.1);
+		}
+		
+		.theme-switch label::before {
+			content: '☀️';
+		}
+		
+		.theme-switch input:checked + label::before {
+			content: '🌙';
+		}
+	</style>
+</head>
+<body class="competence-2">
+	<!-- Bouton de changement de thème -->
+	<div class="theme-switch">
+		<input type="checkbox" id="theme-toggle">
+		<label for="theme-toggle" title="Basculer le thème"></label>
+	</div>
+	<!-- Navigation -->
+	<nav class="nav">		<div class="nav-container">
+			<a href="../../index.html" class="nav-home">Portfolio Lucas Lafosse</a>
+			<ul class="nav-links">
+				<li><a href="../../index.html">Accueil</a></li>
+				<li><a href="competence1.html">Compétence 1</a></li>
+				<li><a href="competence2.html">Compétence 2</a></li>
+				<li><a href="competence3.html">Compétence 3</a></li>
+				<li><a href="competence4.html">Compétence 4</a></li>
+				<li><a href="competence5.html">Compétence 5</a></li>
+				<li><a href="competence6.html">Compétence 6</a></li>
+			</ul>
+		</div></nav>
+
+	<!-- Fil d'Ariane -->
+	<div class="container">
+		<nav class="breadcrumb">
+			<ol class="breadcrumb-list">
+				<li class="breadcrumb-item"><a href="../../index.html">🏠 Accueil</a></li>
+				<li class="breadcrumb-item"><a href="../../index.html#competences">Compétences</a></li>
+				<li class="breadcrumb-item">Compétence 2 - Optimiser des applications</li>
+			</ol>
+		</nav>
+	</div>
+
+	<!-- En-tête -->
+	<header class="header">
+		<div class="competence-number">Compétence 2</div>
+		<h1>Optimiser des applications informatiques</h1>
+		<p>Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d'exécution, précision, consommation de ressources.</p>
+	</header>
+
+	<!-- Contenu principal -->
+	<main class="container">
+		<!-- Description détaillée -->
+		<section class="competence-detail">
+			<h2>Description de la compétence</h2>
+			<p>
+				Cette compétence, c'est celle qui m'a vraiment ouvert les yeux sur l'importance de l'efficacité en informatique ! 
+				Au début, je me contentais de faire fonctionner mon code, mais j'ai découvert qu'il fallait aussi qu'il soit rapide, 
+				qu'il consomme pas trop de mémoire et qu'il soit vraiment optimisé.
+			</p>
+			<p>
+				En cours d'algorithmique, on a appris à analyser la complexité des algorithmes et à comparer différentes solutions 
+				pour résoudre le même problème. C'est fascinant de voir qu'il peut y avoir des écarts énormes de performance 
+				entre deux algorithmes qui font la même chose !
+			</p>
+
+			<div class="composantes">
+				<h3>Composantes Essentielles</h3>
+				<p>Pour optimiser correctement, il faut :</p>
+				<ul>
+					<li><strong>Formaliser et modéliser</strong> des situations complexes</li>
+					<li><strong>Recenser les algorithmes</strong> et les structures de données usuels</li>
+					<li><strong>S'appuyer sur des schémas de raisonnement</strong></li>
+					<li><strong>Justifier les choix</strong> et valider les résultats</li>
+				</ul>
+			</div>
+
+			<div class="apprentissages">
+				<h3>Apprentissages Critiques</h3>
+				<ul>
+					<li><strong>AC1 :</strong> Analyser un problème avec méthode</li>
+					<li><strong>AC2 :</strong> Comparer des algorithmes pour des problèmes classiques</li>
+					<li><strong>AC3 :</strong> Expérimenter la notion de compilation et les représentations bas niveau des données</li>
+					<li><strong>AC4 :</strong> Formaliser et mettre en œuvre des outils mathématiques pour l'informatique</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Mes réalisations -->
+		<section class="section">
+			<h2>Mes Réalisations</h2>
+			<p>Les travaux qui m'ont permis de développer cette compétence :</p>
+			
+			<div class="card">
+				<h3>Analyse de complexité d'algorithmes</h3>
+				<p>
+					J'ai appris à calculer la complexité temporelle et spatiale des algorithmes. 
+					Au début c'était un peu abstrait, mais maintenant je comprends pourquoi c'est important 
+					de savoir si un algorithme est en O(n) ou O(n²) !
+				</p>
+			</div>
+
+			<div class="card">
+				<h3>Comparaison d'algorithmes de tri</h3>
+				<p>
+					TP super intéressant où on a implémenté et comparé différents algorithmes de tri : 
+					bulle, insertion, fusion, rapide... J'ai pu voir concrètement les différences de performance 
+					selon la taille des données.
+				</p>
+			</div>
+
+			<div class="card">
+				<h3>Optimisation de structures de données</h3>
+				<p>
+					Étude des listes, piles, files, arbres... J'ai compris qu'utiliser la bonne structure de données 
+					peut complètement changer les performances d'un programme.
+				</p>
+			</div>
+
+			<div class="card">
+				<h3>Outils mathématiques pour l'informatique</h3>
+				<p>
+					Application des maths en informatique : logique booléenne, théorie des graphes, probabilités... 
+					Ça m'a montré que les maths et l'informatique sont vraiment liées.
+				</p>
+			</div>
+		</section>
+
+		<!-- Bilan personnel -->
+		<section class="section">
+			<h2>Mon Bilan</h2>
+			<p>
+				Cette compétence m'a fait prendre conscience qu'en informatique, il ne suffit pas que ça marche - 
+				il faut que ça marche bien ! J'ai découvert tout un monde derrière l'optimisation : 
+				comment analyser un problème, choisir le bon algorithme, comprendre pourquoi une solution est meilleure qu'une autre.
+			</p>
+			<p>
+				Ce qui m'a le plus marqué, c'est les TP sur les algorithmes de tri. Voir qu'on peut passer de plusieurs secondes 
+				à quelques millisecondes juste en changeant d'algorithme, c'est impressionnant ! 
+				Par contre, j'ai encore du mal avec certains aspects mathématiques, surtout la démonstration formelle des complexités.
+			</p>
+			<p>
+				J'aimerais approfondir cette compétence en étudiant des algorithmes plus avancés et en apprenant 
+				à optimiser du code dans des langages de plus bas niveau.
+			</p>
+		</section>
+	</main>
+
+	<!-- Pied de page -->
+	<footer class="footer">
+		<p>&copy; 2025 Lucas Lafosse - Étudiant BUT Informatique</p>
+		<p><a href="index.html" style="color: #ccc;">Retour à l'accueil</a></p>
+	</footer>
+</body>
+</html>

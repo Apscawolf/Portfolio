@@ -1,0 +1,407 @@
+/* CSS pour les pages de compétences - Niveau BUT Info 1ère année */
+
+/* Variables CSS simples */
+:root {
+	/* Couleurs des compétences IUT */
+	--c1-color: #e74c3c;    /* Rouge */
+	--c2-color: #f39c12;    /* Orange */
+	--c3-color: #f1c40f;    /* Jaune */
+	--c4-color: #27ae60;    /* Vert */
+	--c5-color: #3498db;    /* Bleu */
+	--c6-color: #9b59b6;    /* Violet */
+	
+	/* Couleurs principales */
+	--primary: #667eea;     
+	--secondary: #764ba2;   
+	--accent: #f093fb;      
+	
+	/* Couleurs du thème clair */
+	--bg: #ffffff;
+	--bg-light: #f8f9fb;
+	--bg-card: #ffffff;
+	--text: #2d3748;
+	--text-light: #718096;
+	--text-muted: #a0aec0;
+	--border: #e2e8f0;
+	--shadow: rgba(0, 0, 0, 0.1);
+	
+	/* Espacement */
+	--gap: 1rem;
+	--gap-lg: 2rem;
+	
+	/* Bordures */
+	--radius: 12px;
+	--radius-lg: 16px;
+}
+
+/* Thème sombre - CSS uniquement */
+[data-theme="dark"] {
+	--bg: #1a202c;
+	--bg-light: #2d3748;
+	--bg-card: #2d3748;
+	--text: #f7fafc;
+	--text-light: #cbd5e0;
+	--text-muted: #a0aec0;
+	--border: #4a5568;
+	--shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Classes spécifiques pour chaque compétence */
+.competence-1 { --competence-color: var(--c1-color); }
+.competence-2 { --competence-color: var(--c2-color); }
+.competence-3 { --competence-color: var(--c3-color); }
+.competence-4 { --competence-color: var(--c4-color); }
+.competence-5 { --competence-color: var(--c5-color); }
+.competence-6 { --competence-color: var(--c6-color); }
+
+/* Reset CSS basique */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: var(--bg-light);
+	color: var(--text);
+	line-height: 1.6;
+	transition: all 0.3s ease;
+}
+
+/* Container principal */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 var(--gap);
+}
+
+/* Navigation */
+.nav {
+	background: var(--bg);
+	padding: var(--gap) 0;
+	border-bottom: 1px solid var(--border);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: var(--gap);
+	text-align: center;
+}
+
+.nav-home {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.nav-links {
+	display: flex;
+	gap: 0.5rem;
+	list-style: none;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.nav-links a {
+	color: var(--text-light);
+	text-decoration: none;
+	padding: 0.5rem var(--gap);
+	border-radius: var(--radius);
+	transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+	background: var(--primary);
+	color: white;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+	background: var(--bg);
+	padding: var(--gap);
+	border-radius: var(--radius);
+	margin-bottom: var(--gap-lg);
+	border: 1px solid var(--border);
+}
+
+.breadcrumb-list {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	list-style: none;
+}
+
+.breadcrumb-item {
+	color: var(--text-light);
+	font-size: 0.9rem;
+}
+
+.breadcrumb-item a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+	content: '→';
+	margin-left: 0.5rem;
+	color: var(--text-light);
+}
+
+.breadcrumb-item:last-child {
+	color: var(--text);
+	font-weight: 500;
+}
+
+/* Header */
+.header {
+	background: linear-gradient(135deg, var(--competence-color), var(--primary));
+	color: white;
+	text-align: center;
+	padding: var(--gap-lg);
+	margin-bottom: var(--gap-lg);
+	border-radius: var(--radius-lg);
+	box-shadow: 0 10px 30px var(--shadow);
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	margin-bottom: var(--gap);
+	font-weight: 700;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.header p {
+	font-size: 1.1rem;
+	opacity: 0.9;
+}
+
+.competence-number {
+	background: rgba(255, 255, 255, 0.2);
+	color: white;
+	padding: 0.5rem var(--gap);
+	border-radius: var(--radius);
+	font-size: 0.9rem;
+	font-weight: 600;
+	display: inline-block;
+	margin-bottom: var(--gap);
+}
+
+/* Sections */
+.section {
+	background: var(--bg-card);
+	border-radius: var(--radius-lg);
+	padding: var(--gap-lg);
+	margin-bottom: var(--gap-lg);
+	box-shadow: 0 4px 20px var(--shadow);
+	border: 1px solid var(--border);
+	transition: all 0.3s ease;
+}
+
+.section:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 30px var(--shadow);
+}
+
+.section h2 {
+	color: var(--text);
+	margin-bottom: var(--gap);
+	font-size: 1.8rem;
+	font-weight: 600;
+	border-bottom: 3px solid var(--primary);
+	padding-bottom: 0.5rem;
+}
+
+.section p {
+	color: var(--text-light);
+	margin-bottom: var(--gap);
+	line-height: 1.7;
+}
+
+/* Compétence detail */
+.competence-detail {
+	background: var(--bg-card);
+	border-radius: var(--radius-lg);
+	padding: var(--gap-lg);
+	margin-bottom: var(--gap-lg);
+	border: 1px solid var(--border);
+	box-shadow: 0 4px 20px var(--shadow);
+}
+
+.composantes, .apprentissages {
+	margin-top: var(--gap);
+	padding: var(--gap);
+	border-radius: var(--radius);
+	border-left: 4px solid var(--primary);
+	background: var(--bg-light);
+}
+
+.apprentissages {
+	border-left-color: var(--secondary);
+}
+
+.composantes h3, .apprentissages h3 {
+	color: var(--text);
+	margin-bottom: var(--gap);
+	font-size: 1.2rem;
+}
+
+.composantes ul, .apprentissages ul {
+	margin-left: var(--gap-lg);
+	margin-top: var(--gap);
+}
+
+.composantes li, .apprentissages li {
+	margin-bottom: 0.5rem;
+	color: var(--text-light);
+}
+
+/* Cards grid */
+.cards-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: var(--gap);
+	margin-top: var(--gap);
+}
+
+.card {
+	background: var(--bg);
+	border-radius: var(--radius);
+	padding: var(--gap);
+	border: 1px solid var(--border);
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+	color: var(--text);
+	margin-bottom: var(--gap);
+	font-weight: 600;
+}
+
+.card h3 a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.card h3 a:hover {
+	text-decoration: underline;
+}
+
+.card p {
+	color: var(--text-light);
+}
+
+/* Footer */
+.footer {
+	background: var(--text);
+	color: white;
+	text-align: center;
+	padding: var(--gap-lg);
+	margin-top: var(--gap-lg);
+}
+
+.footer p {
+	margin-bottom: 0.5rem;
+	opacity: 0.9;
+}
+
+.footer a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+}
+
+.footer a:hover {
+	color: white;
+}
+
+/* Styles spécifiques pour chaque page de compétence */
+.competence-1 .header {
+	background: linear-gradient(135deg, var(--c1-color), #c0392b);
+}
+
+.competence-1 .section h2,
+.competence-1 .breadcrumb-item a {
+	border-color: var(--c1-color);
+	color: var(--c1-color);
+}
+
+.competence-2 .header {
+	background: linear-gradient(135deg, var(--c2-color), #d68910);
+}
+
+.competence-2 .section h2,
+.competence-2 .breadcrumb-item a {
+	border-color: var(--c2-color);
+	color: var(--c2-color);
+}
+
+.competence-3 .header {
+	background: linear-gradient(135deg, var(--c3-color), #d4ac0d);
+}
+
+.competence-3 .section h2,
+.competence-3 .breadcrumb-item a {
+	border-color: var(--c3-color);
+	color: var(--c3-color);
+}
+
+.competence-4 .header {
+	background: linear-gradient(135deg, var(--c4-color), #229954);
+}
+
+.competence-4 .section h2,
+.competence-4 .breadcrumb-item a {
+	border-color: var(--c4-color);
+	color: var(--c4-color);
+}
+
+.competence-5 .header {
+	background: linear-gradient(135deg, var(--c5-color), #2e86c1);
+}
+
+.competence-5 .section h2,
+.competence-5 .breadcrumb-item a {
+	border-color: var(--c5-color);
+	color: var(--c5-color);
+}
+
+.competence-6 .header {
+	background: linear-gradient(135deg, var(--c6-color), #7d3c98);
+}
+
+.competence-6 .section h2,
+.competence-6 .breadcrumb-item a {
+	border-color: var(--c6-color);
+	color: var(--c6-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.nav-container {
+		flex-direction: column;
+		text-align: center;
+	}	
+	.header h1 {
+		font-size: 2rem;
+	}
+	
+	.section {
+		padding: var(--gap);
+	}
+	
+	.cards-grid {
+		grid-template-columns: 1fr;
+	}
+}
