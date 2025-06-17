@@ -3,18 +3,18 @@
 /* Variables CSS simples */
 :root {
 	/* Couleurs principales - Nouveau thème moderne */
-	--primary: #667eea;     /* Bleu moderne */
-	--secondary: #764ba2;   /* Violet moderne */
-	--accent: #f093fb;      /* Rose accent */
-	
+	--primary: #667eea; /* Bleu moderne */
+	--secondary: #764ba2; /* Violet moderne */
+	--accent: #f093fb; /* Rose accent */
+
 	/* Couleurs des compétences IUT */
-	--c1-color: #e74c3c;    /* Rouge */
-	--c2-color: #f39c12;    /* Orange */
-	--c3-color: #f1c40f;    /* Jaune */
-	--c4-color: #27ae60;    /* Vert */
-	--c5-color: #3498db;    /* Bleu */
-	--c6-color: #9b59b6;    /* Violet */
-	
+	--c1-color: #e74c3c; /* Rouge */
+	--c2-color: #f39c12; /* Orange */
+	--c3-color: #f1c40f; /* Jaune */
+	--c4-color: #27ae60; /* Vert */
+	--c5-color: #3498db; /* Bleu */
+	--c6-color: #9b59b6; /* Violet */
+
 	/* Couleurs du thème clair */
 	--bg: #ffffff;
 	--bg-light: #f8f9fb;
@@ -24,13 +24,14 @@
 	--text-muted: #a0aec0;
 	--border: #e2e8f0;
 	--shadow: rgba(0, 0, 0, 0.1);
-	
+
 	/* Espacement */
 	--gap: 1rem;
 	--gap-lg: 2rem;
-	
+
 	/* Bordures */
-	--radius: 12px;	--radius-lg: 16px;
+	--radius: 12px;
+	--radius-lg: 16px;
 }
 
 /* Reset CSS basique */
@@ -41,7 +42,7 @@
 }
 
 body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	background-color: var(--bg-light);
 	color: var(--text);
 	line-height: 1.6;
@@ -70,7 +71,7 @@ body {
 	font-size: 2.5rem;
 	margin-bottom: var(--gap);
 	font-weight: 700;
-	text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .header p {
@@ -140,12 +141,25 @@ body {
 }
 
 /* Couleurs spécifiques par compétence */
-.competences-matrix th:nth-child(2) { background: var(--c1-color); } /* C1 - Rouge */
-.competences-matrix th:nth-child(3) { background: var(--c2-color); } /* C2 - Orange */
-.competences-matrix th:nth-child(4) { background: var(--c3-color); color: var(--text); } /* C3 - Jaune */
-.competences-matrix th:nth-child(5) { background: var(--c4-color); } /* C4 - Vert */
-.competences-matrix th:nth-child(6) { background: var(--c5-color); } /* C5 - Bleu */
-.competences-matrix th:nth-child(7) { background: var(--c6-color); } /* C6 - Violet */
+.competences-matrix th:nth-child(2) {
+	background: var(--c1-color);
+} /* C1 - Rouge */
+.competences-matrix th:nth-child(3) {
+	background: var(--c2-color);
+} /* C2 - Orange */
+.competences-matrix th:nth-child(4) {
+	background: var(--c3-color);
+	color: var(--text);
+} /* C3 - Jaune */
+.competences-matrix th:nth-child(5) {
+	background: var(--c4-color);
+} /* C4 - Vert */
+.competences-matrix th:nth-child(6) {
+	background: var(--c5-color);
+} /* C5 - Bleu */
+.competences-matrix th:nth-child(7) {
+	background: var(--c6-color);
+} /* C6 - Violet */
 
 .competences-matrix th a {
 	color: white;
@@ -185,7 +199,7 @@ body {
 }
 
 .competences-matrix .competence-cell.checked::before {
-	content: '✓';
+	content: "✓";
 	font-size: 1.2rem;
 	font-weight: bold;
 }
@@ -232,7 +246,7 @@ body {
 
 .card:hover {
 	transform: translateY(-5px);
-	box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card h3 {
@@ -284,26 +298,26 @@ body {
 	.header h1 {
 		font-size: 2rem;
 	}
-	
+
 	.section {
 		padding: var(--gap);
 	}
-	
+
 	.competences-matrix th,
 	.competences-matrix td {
 		padding: 0.5rem;
 		font-size: 0.9rem;
 	}
-	
+
 	.competences-matrix .competence-cell {
 		width: 45px;
 		height: 40px;
 	}
-	
+
 	.cards-grid {
 		grid-template-columns: 1fr;
 	}
-	
+
 	.legend {
 		gap: var(--gap);
 	}
