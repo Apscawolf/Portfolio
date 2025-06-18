@@ -221,6 +221,12 @@ body {
 	margin-bottom: var(--gap-lg);
 	border: 1px solid var(--border);
 	box-shadow: 0 4px 20px var(--shadow);
+	transition: all 0.3s ease;
+}
+
+.competence-detail:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 30px var(--shadow);
 }
 
 .composantes, .apprentissages {
