@@ -275,8 +275,33 @@ body {
 }
 
 .section li {
-	margin-bottom: 0.5rem;
-	color: var(--text-light);
+	margin-bottom: 0.5rem;	color: var(--text-light);
+}
+
+/* Tags pour les projets */
+.project-tags {
+	display: flex;
+	gap: var(--gap);
+	margin-top: var(--gap);
+	flex-wrap: wrap;
+}
+
+.tag {
+	background: var(--secondary);
+	color: white;
+	padding: 0.4rem 0.8rem;
+	border-radius: var(--radius);
+	font-size: 0.85rem;
+	font-weight: 500;
+	border: 1px solid transparent;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 4px rgba(52, 152, 219, 0.2);
+}
+
+.tag:hover {
+	background: var(--primary);
+	transform: translateY(-1px);
+	box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
 }
 
 /* Footer */
