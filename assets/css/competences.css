@@ -113,23 +113,18 @@ body {
 
 /* Breadcrumb */
 .breadcrumb {
-	background: var(--bg);
-	padding: var(--gap);
-	border-radius: var(--radius);
-	margin-bottom: var(--gap-lg);
-	border: 1px solid var(--border);
+	margin: var(--gap) 0;
 }
 
 .breadcrumb-list {
 	display: flex;
-	align-items: center;
-	gap: 0.5rem;
 	list-style: none;
+	gap: var(--gap-sm);
+	align-items: center;
 }
 
 .breadcrumb-item {
 	color: var(--text-light);
-	font-size: 0.9rem;
 }
 
 .breadcrumb-item a {
@@ -137,15 +132,14 @@ body {
 	text-decoration: none;
 }
 
-.breadcrumb-item:not(:last-child)::after {
-	content: '→';
-	margin-left: 0.5rem;
-	color: var(--text-light);
+.breadcrumb-item a:hover {
+	text-decoration: underline;
 }
 
-.breadcrumb-item:last-child {
-	color: var(--text);
-	font-weight: 500;
+.breadcrumb-item:not(:last-child)::after {
+	content: '>';
+	margin-left: var(--gap-sm);
+	color: var(--text-muted);
 }
 
 /* Header */
