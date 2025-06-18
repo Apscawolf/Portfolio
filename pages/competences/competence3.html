@@ -4,21 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Compétence 3 - Portfolio Lucas Lafosse</title>
-		<link rel="stylesheet" href="../../assets/css/competences.css" />
+		<link rel="stylesheet" href="../../assets/css/style.css" />
 	</head>
-	<body class="competence-3">
-		<!-- Navigation -->
-		<nav class="nav">
-			<div class="nav-container">
-				<a href="../../index.html" class="nav-home">Portfolio Lucas Lafosse</a>
-				<ul class="nav-links">
-					<li><a href="../../index.html">Accueil</a></li>
-					<li><a href="competence1.html">Compétence 1</a></li>
-					<li><a href="competence2.html">Compétence 2</a></li>
-					<li><a href="competence3.html">Compétence 3</a></li>
-					<li><a href="competence4.html">Compétence 4</a></li>
-					<li><a href="competence5.html">Compétence 5</a></li>
-					<li><a href="competence6.html">Compétence 6</a></li>
+	<body class="competence-3">		<!-- Navigation -->
+		<nav class="nav nav--competences">
+			<div class="nav__container">
+				<a href="../../index.html" class="nav__brand">Portfolio Lucas Lafosse</a>
+				<ul class="nav__links">
+					<li><a href="../../index.html" class="nav__link">Accueil</a></li>
+					<li><a href="competence1.html" class="nav__link">C1</a></li>
+					<li><a href="competence2.html" class="nav__link">C2</a></li>
+					<li><a href="competence3.html" class="nav__link nav__link--active">C3</a></li>
+					<li><a href="competence4.html" class="nav__link">C4</a></li>
+					<li><a href="competence5.html" class="nav__link">C5</a></li>
+					<li><a href="competence6.html" class="nav__link">C6</a></li>
+					<li><a href="../../index.html#projets" class="nav__link">Projets</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -26,17 +26,17 @@
 		<!-- Fil d'Ariane -->
 		<div class="container">
 			<nav class="breadcrumb">
-				<ol class="breadcrumb-list">
-					<li class="breadcrumb-item"><a href="../../index.html">🏠 Accueil</a></li>
-					<li class="breadcrumb-item"><a href="../../index.html#competences">Compétences</a></li>
-					<li class="breadcrumb-item">Compétence 3 - Administration systèmes</li>
+				<ol class="breadcrumb__list">
+					<li class="breadcrumb__item"><a href="../../index.html" class="breadcrumb__link">🏠 Accueil</a></li>
+					<li class="breadcrumb__item"><a href="../../index.html#competences" class="breadcrumb__link">Compétences</a></li>
+					<li class="breadcrumb__item">Compétence 3 - Administration systèmes</li>
 				</ol>
 			</nav>
 		</div>
 
 		<!-- En-tête -->
-		<header class="header">
-			<div class="competence-number">Compétence 3</div>
+		<header class="competence-header">
+			<div class="competence-header__number">Compétence 3</div>
 			<h1>Administrer des Systèmes</h1>
 			<p>
 				Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux.
@@ -83,7 +83,7 @@
 			</section>
 
 			<!-- Mes réalisations -->
-			<section class="section">
+			<section class="section section-box">
 				<h2>Mes Réalisations</h2>
 				<p>Mes premiers pas dans l'administration système :</p>
 
@@ -121,13 +121,12 @@
 			</section>
 
 			<!-- Bilan personnel -->
-			<section class="section">
+			<section class="section section-box">
 				<h2>Mon Bilan</h2>
 				<p>
 					L'administration système m'a ouvert les yeux sur toute la partie "invisible" de l'informatique. Avant, je ne me rendais pas compte
 					de la complexité qui se cache derrière un simple clic sur une application ! Maintenant je comprends mieux comment tout ça
-					fonctionne ensemble.
-				</p>
+					fonctionne ensemble.				</p>
 				<p>
 					Ce que j'ai trouvé le plus intéressant, c'est la partie réseau. Comprendre comment les machines communiquent entre elles, comment
 					on peut créer des réseaux sécurisés... Par contre, je trouve que c'est un domaine où il faut être très rigoureux et méthodique -
@@ -138,11 +137,68 @@
 					semble vraiment important pour l'avenir.
 				</p>
 			</section>
+
+			<!-- Preuves concrètes -->
+			<section class="competence-detail">
+				<h2>Preuves et Réalisations</h2>
+				<div class="preuves">
+					<div class="preuve-item">
+						<strong class="text-accent">🎮 SAE 1.01 - Gestion de ressources système</strong>
+						<ul>
+							<li>Gestion de 11 fichiers de données (.data)</li>
+							<li>Chargement dynamique des niveaux</li>
+							<li>Parsing et validation des fichiers de configuration</li>
+							<li>Organisation modulaire des ressources (images, données)</li>
+						</ul>
+					</div>
+					<div class="preuve-item">
+						<strong>💾 Gestion des fichiers et ressources</strong>
+						<ul>
+							<li>Architecture de dossiers structurée (data/, images/)</li>
+							<li>Gestion des chemins relatifs et absolus</li>
+							<li>Mise en cache des ressources graphiques</li>
+							<li>Gestion d'erreurs de lecture de fichiers</li>
+						</ul>
+					</div>
+					<div class="preuve-item">
+						<strong class="text-accent">🏗️ SAE 2.03 - Architecture client-serveur</strong>
+						<ul>
+							<li>Configuration serveur PHP</li>
+							<li>Déploiement avec Docker</li>
+							<li>Gestion des communications réseau</li>
+							<li>Administration des services</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Projets liés -->
+			<section class="projets-lies">
+				<h2>Projets démontrant cette compétence</h2>
+				<div class="cards-grid">
+					<div class="card">
+						<h3><a href="../projets/sae101.html">SAE 1.01 - Jeu de Labyrinthe</a></h3>
+						<div class="competence-tags">
+							<span class="tag">Gestion fichiers</span>
+							<span class="tag">Ressources système</span>
+							<span class="tag">Architecture modulaire</span>
+						</div>
+					</div>
+					<div class="card">
+						<h3><a href="../projets/sae203.html">SAE 2.03 - Application de Chat</a></h3>
+						<div class="competence-tags">
+							<span class="tag">Docker</span>
+							<span class="tag">Client-serveur</span>
+							<span class="tag">Déploiement</span>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<!-- Pied de page -->
 		<footer class="footer">
 			<p>&copy; 2025 Lucas Lafosse - Étudiant BUT Informatique</p>
-			<p><a href="../../index.html" style="color: #ccc">Retour à l'accueil</a></p>
+			<p>IUT Informatique Le Havre - Université Le Havre Normandie</p>
 		</footer>
 	</body>
 </html>

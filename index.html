@@ -4,9 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio - Lucas Lafosse</title>
-		<link rel="stylesheet" href="assets/css/index.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
+		<!-- Navigation -->
+		<nav class="nav">
+			<div class="nav__container">
+				<a href="index.html" class="nav__brand">Portfolio Lucas Lafosse</a>
+				<ul class="nav__links">
+					<li><a href="#about" class="nav__link">À propos</a></li>
+					<li><a href="#competences" class="nav__link">Compétences</a></li>
+					<li><a href="#projets" class="nav__link">Projets</a></li>
+				</ul>
+			</div>
+		</nav>
+
 		<!-- En-tête -->
 		<header class="header">
 			<h1>Lucas Lafosse</h1>
@@ -16,7 +28,7 @@
 		<!-- Contenu principal -->
 		<main class="container">
 			<!-- Section présentation -->
-			<section class="section about">
+			<section class="section about" id="about">
 				<h2>À propos de moi</h2>
 				<p>
 					Salut ! Moi c'est Lucas, j'ai 19 ans et je suis actuellement étudiant en première année de BUT Informatique à l'IUT du Havre.
@@ -30,28 +42,29 @@
 				<p>
 					Ce portfolio me sert à rassembler les différents projets et travaux que j'ai réalisés cette année. C'est ma façon de montrer ce
 					que j'ai appris et les compétences que j'ai développées pendant ces premiers mois à l'IUT.
-				</p>			</section>
+				</p>
+			</section>
 
 			<!-- Section BUT Informatique -->
 			<section class="section about">
 				<h2>Qu'est-ce que le BUT Informatique ?</h2>
 				<p>
-					Le BUT (Bachelor Universitaire de Technologie) Informatique est une formation de 3 ans qui remplace le DUT depuis 2021. 
-					C'est un diplôme professionnalisant qui nous prépare aux métiers du numérique avec une approche très pratique.
+					Le BUT (Bachelor Universitaire de Technologie) Informatique est une formation de 3 ans qui remplace le DUT depuis 2021. C'est un
+					diplôme professionnalisant qui nous prépare aux métiers du numérique avec une approche très pratique.
 				</p>
 				<p>
-					Ce qui est vraiment cool avec le BUT, c'est qu'on apprend en faisant ! On a des cours théoriques bien sûr, mais surtout 
-					beaucoup de TP, de projets et de SAE (Situations d'Apprentissage et d'Évaluation). Ces SAE sont des projets concrets 
-					qui nous mettent en situation professionnelle.
+					Ce qui est vraiment cool avec le BUT, c'est qu'on apprend en faisant ! On a des cours théoriques bien sûr, mais surtout beaucoup
+					de TP, de projets et de SAE (Situations d'Apprentissage et d'Évaluation). Ces SAE sont des projets concrets qui nous mettent en
+					situation professionnelle.
 				</p>
 				<p>
-					La formation couvre tous les domaines de l'informatique : développement web et logiciel, bases de données, réseaux, 
-					cybersécurité, gestion de projet, et même un peu d'intelligence artificielle. L'objectif est qu'on soit polyvalents 
-					et qu'on puisse s'adapter aux besoins des entreprises.
+					La formation couvre tous les domaines de l'informatique : développement web et logiciel, bases de données, réseaux, cybersécurité,
+					gestion de projet, et même un peu d'intelligence artificielle. L'objectif est qu'on soit polyvalents et qu'on puisse s'adapter aux
+					besoins des entreprises.
 				</p>
 				<p>
-					Après le BUT, on peut soit entrer directement dans la vie active (c'est fait pour ça !), soit continuer en master 
-					ou en école d'ingénieurs. C'est cette flexibilité qui m'a séduit dans cette formation.
+					Après le BUT, on peut soit entrer directement dans la vie active (c'est fait pour ça !), soit continuer en master ou en école
+					d'ingénieurs. C'est cette flexibilité qui m'a séduit dans cette formation.
 				</p>
 			</section>
 
@@ -59,25 +72,24 @@
 			<section class="section about">
 				<h2>Comment est-on évalué ?</h2>
 				<p>
-					L'évaluation en BUT Informatique est basée sur une approche par compétences, c'est-à-dire qu'on ne note pas juste 
-					nos connaissances, mais notre capacité à les appliquer dans des situations concrètes.
+					L'évaluation en BUT Informatique est basée sur une approche par compétences, c'est-à-dire qu'on ne note pas juste nos
+					connaissances, mais notre capacité à les appliquer dans des situations concrètes.
 				</p>
 				<p>
-					Il y a 6 compétences principales en informatique (que vous pouvez voir dans le tableau ci-dessous), et chaque projet, 
-					TP ou SAE nous permet de développer et de valider une ou plusieurs de ces compétences. C'est beaucoup plus concret 
-					que des examens traditionnels !
+					Il y a 6 compétences principales en informatique (que vous pouvez voir dans le tableau ci-dessous), et chaque projet, TP ou SAE
+					nous permet de développer et de valider une ou plusieurs de ces compétences. C'est beaucoup plus concret que des examens
+					traditionnels !
 				</p>
 				<p>
-					<strong>Les SAE (Situations d'Apprentissage et d'Évaluation)</strong> sont au cœur de l'évaluation. Ce sont des projets 
-					pluridisciplinaires qui durent plusieurs semaines et qui nous mettent en situation réelle. Par exemple, concevoir 
-					une base de données complète, développer une application web, ou configurer un réseau d'entreprise.
+					<strong class="text-accent">Les SAE (Situations d'Apprentissage et d'Évaluation)</strong> sont au cœur de l'évaluation. Ce sont des projets
+					pluridisciplinaires qui durent plusieurs semaines et qui nous mettent en situation réelle. Par exemple, concevoir une base de
+					données complète, développer une application web, ou configurer un réseau d'entreprise.
 				</p>
-			</section>
-
-			<!-- Section compétences -->
-			<section class="section">
+			</section>			<!-- Section compétences -->
+			<section class="section section-box" id="competences">
 				<h2>Matrice des Compétences</h2>
-				<p>Tableau croisé montrant les projets réalisés et les compétences acquises :</p>				<table class="competences-matrix">
+				<p>Tableau croisé montrant les projets réalisés et les compétences acquises :</p>
+				<table class="table competences-matrix">
 					<thead>
 						<tr>
 							<th>Projets / Travaux</th>
@@ -88,21 +100,31 @@
 							<th><a href="./pages/competences/competence5.html">C5</a></th>
 							<th><a href="./pages/competences/competence6.html">C6</a></th>
 						</tr>
-					</thead>					<tbody>
+					</thead>
+					<tbody>
 						<tr>
-							<td class="project-name"><a href="./pages/projets/sae204.html">SAE 2.04 - Base de données</a></td>
-							<td class="competence-cell"></td>
-							<td class="competence-cell"></td>
-							<td class="competence-cell"></td>
+							<td class="project-name"><a href="./pages/projets/sae101.html">SAE 1.01 - Jeu de Labyrinthe</a></td>
+							<td class="competence-cell checked"></td>
+							<td class="competence-cell checked"></td>
+							<td class="competence-cell checked"></td>
 							<td class="competence-cell checked"></td>
 							<td class="competence-cell"></td>
 							<td class="competence-cell checked"></td>
 						</tr>
 						<tr>
-							<td class="project-name"><a href="./pages/projets/projet-matezone.html">SAE 2.03 - Application de Chat</a></td>
+							<td class="project-name"><a href="./pages/projets/sae203.html">SAE 2.03 - Application de Chat</a></td>
 							<td class="competence-cell checked"></td>
 							<td class="competence-cell checked"></td>
 							<td class="competence-cell checked"></td>
+							<td class="competence-cell checked"></td>
+							<td class="competence-cell"></td>
+							<td class="competence-cell checked"></td>
+						</tr>
+						<tr>
+							<td class="project-name"><a href="./pages/projets/sae204.html">SAE 2.04 - Base de données</a></td>
+							<td class="competence-cell"></td>
+							<td class="competence-cell"></td>
+							<td class="competence-cell"></td>
 							<td class="competence-cell checked"></td>
 							<td class="competence-cell"></td>
 							<td class="competence-cell checked"></td>
@@ -119,10 +141,8 @@
 						<span>Compétence non concernée</span>
 					</div>
 				</div>
-			</section>
-
-			<!-- Section description des compétences -->
-			<section class="section">
+			</section>			<!-- Section description des compétences -->
+			<section class="section section-box">
 				<h2>Description des Compétences</h2>
 				<div class="cards-grid">
 					<div class="card">
@@ -154,29 +174,47 @@
 					<div class="card">
 						<h3><a href="./pages/competences/competence6.html">C6 - Travail en équipe</a></h3>
 						<p>Développer les aptitudes pour travailler efficacement en équipe.</p>
-					</div>				</div>
+					</div>
+				</div>
 			</section>			<!-- Section projets -->
-			<section class="section" id="projets">
+			<section class="section section-box" id="projets">
 				<h2>Projets Réalisés</h2>
 				<p>Découvrez quelques-uns des projets que j'ai réalisés durant ma formation :</p>
 				<div class="cards-grid">
 					<div class="card">
-						<h3><a href="./pages/projets/sae204.html">SAE 2.04 - Base de données</a></h3>
-						<p>Conception et exploitation d'une base de données relationnelle sur le thème du ski alpin. Travail en équipe avec SQL et PostgreSQL.</p>
-						<div class="project-tags">
-							<span class="tag">SQL</span>
-							<span class="tag">PostgreSQL</span>
-							<span class="tag">Équipe</span>
+						<h3><a href="./pages/projets/sae101.html">SAE 1.01 - Jeu de Labyrinthe</a></h3>
+						<p>
+							Développement progressif d'un jeu d'aventure en Java : du labyrinthe simple au jeu complet avec ennemis, caisses et 5
+							thèmes graphiques.
+						</p>						<div class="project-tags">
+							<span class="tag">Java</span>
+							<span class="tag">Swing</span>
+							<span class="tag">Jeu</span>
+							<span class="tag">Équipe de 5</span>
 						</div>
 					</div>
 					<div class="card">
-						<h3><a href="./pages/projets/projet-matezone.html">SAE 2.03 - Application de Chat</a></h3>
-						<p>Développement d'une application de messagerie instantanée en Java Swing avec architecture client-serveur et déploiement Docker.</p>
-						<div class="project-tags">
+						<h3><a href="./pages/projets/sae203.html">SAE 2.03 - Application de Chat</a></h3>
+						<p>
+							Développement d'une application de messagerie instantanée en Java Swing avec architecture client-serveur et déploiement
+							Docker.
+						</p>						<div class="project-tags">
 							<span class="tag">Java</span>
 							<span class="tag">Swing</span>
 							<span class="tag">Docker</span>
 							<span class="tag">Client-Serveur</span>
+						</div>
+					</div>
+					<div class="card">
+						<h3><a href="./pages/projets/sae204.html">SAE 2.04 - Base de données</a></h3>
+						<p>
+							Conception et exploitation d'une base de données relationnelle sur le thème du ski alpin. Travail en équipe avec SQL et
+							PostgreSQL.
+						</p>
+						<div class="project-tags">
+							<span class="tag">SQL</span>
+							<span class="tag">PostgreSQL</span>
+							<span class="tag">Équipe</span>
 						</div>
 					</div>
 				</div>

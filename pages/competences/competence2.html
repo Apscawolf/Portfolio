@@ -4,21 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Compétence 2 - Portfolio Lucas Lafosse</title>
-		<link rel="stylesheet" href="../../assets/css/competences.css" />
+		<link rel="stylesheet" href="../../assets/css/style.css" />
 	</head>
-	<body class="competence-2">
-		<!-- Navigation -->
-		<nav class="nav">
-			<div class="nav-container">
-				<a href="../../index.html" class="nav-home">Portfolio Lucas Lafosse</a>
-				<ul class="nav-links">
-					<li><a href="../../index.html">Accueil</a></li>
-					<li><a href="competence1.html">Compétence 1</a></li>
-					<li><a href="competence2.html">Compétence 2</a></li>
-					<li><a href="competence3.html">Compétence 3</a></li>
-					<li><a href="competence4.html">Compétence 4</a></li>
-					<li><a href="competence5.html">Compétence 5</a></li>
-					<li><a href="competence6.html">Compétence 6</a></li>
+	<body class="competence-2">		<!-- Navigation -->
+		<nav class="nav nav--competences">
+			<div class="nav__container">
+				<a href="../../index.html" class="nav__brand">Portfolio Lucas Lafosse</a>
+				<ul class="nav__links">
+					<li><a href="../../index.html" class="nav__link">Accueil</a></li>
+					<li><a href="competence1.html" class="nav__link">C1</a></li>
+					<li><a href="competence2.html" class="nav__link nav__link--active">C2</a></li>
+					<li><a href="competence3.html" class="nav__link">C3</a></li>
+					<li><a href="competence4.html" class="nav__link">C4</a></li>
+					<li><a href="competence5.html" class="nav__link">C5</a></li>
+					<li><a href="competence6.html" class="nav__link">C6</a></li>
+					<li><a href="../../index.html#projets" class="nav__link">Projets</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -26,17 +26,16 @@
 		<!-- Fil d'Ariane -->
 		<div class="container">
 			<nav class="breadcrumb">
-				<ol class="breadcrumb-list">
-					<li class="breadcrumb-item"><a href="../../index.html">🏠 Accueil</a></li>
-					<li class="breadcrumb-item"><a href="../../index.html#competences">Compétences</a></li>
-					<li class="breadcrumb-item">Compétence 2 - Optimiser des applications</li>
+				<ol class="breadcrumb__list">
+					<li class="breadcrumb__item"><a href="../../index.html" class="breadcrumb__link">🏠 Accueil</a></li>					<li class="breadcrumb__item"><a href="../../index.html#competences" class="breadcrumb__link">Compétences</a></li>
+					<li class="breadcrumb__item">Compétence 2 - Optimiser des applications</li>
 				</ol>
 			</nav>
 		</div>
 
 		<!-- En-tête -->
-		<header class="header">
-			<div class="competence-number">Compétence 2</div>
+		<header class="competence-header">
+			<div class="competence-header__number">Compétence 2</div>
 			<h1>Optimiser des applications informatiques</h1>
 			<p>
 				Proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d'exécution, précision, consommation de
@@ -45,13 +44,12 @@
 		</header>
 
 		<!-- Contenu principal -->
-		<main class="container">
-			<!-- Critère 1 -->
+		<main class="container">			<!-- Critère 1 -->
 			<section class="competence-detail">
 				<h2>1. Analyse problème avec méthode - Structures de données</h2>
 				<div class="preuves">
 					<div class="preuve-item">
-						<strong>🧩 SAE 2.03 - Découpage modulaire</strong>
+						<strong class="text-accent">🧩 SAE 2.03 - Découpage modulaire</strong>
 						<ul>
 							<li>Séparation client/serveur</li>
 							<li>Classes distinctes par fonctionnalité</li>
@@ -60,22 +58,30 @@
 						</ul>
 					</div>
 					<div class="preuve-item">
+						<strong class="text-accent">🎮 SAE 1.01 - Architecture MVC</strong>
+						<ul>
+							<li>Classe Jeu → Modèle (logique métier)</li>
+							<li>IhmCui → Vue (interface utilisateur)</li>
+							<li>Controleur → Contrôleur (gestion événements)</li>
+							<li>Classes Caisse, Ennemi → Entités spécialisées</li>
+						</ul>
+					</div>
+					<div class="preuve-item">
 						<strong>📊 Structures de données utilisées</strong>
 						<ul>
-							<li>Fichiers texte → Stockage séquentiel</li>
-							<li>ArrayLists → Collections dynamiques</li>
-							<li>HashMap → Accès rapide utilisateurs</li>
+							<li>char[][] → Grille de jeu (accès O(1))</li>
+							<li>char[] → Inventaire compact</li>
+							<li>Caisse[], Ennemi[] → Tableaux d'entités</li>
+							<li>String[] → Liste des skins</li>
 						</ul>
 					</div>
 				</div>
-			</section>
-
-			<!-- Critère 2 -->
+			</section>			<!-- Critère 2 -->
 			<section class="competence-detail">
 				<h2>2. Comparaison algorithmes - Algorithmes usuels</h2>
 				<div class="preuves">
 					<div class="preuve-item">
-						<strong>🔍 Recherche utilisateur connecté</strong>
+						<strong class="text-accent">🔍 SAE 2.03 - Recherche utilisateurs</strong>
 						<ul>
 							<li>Recherche séquentielle → Simple mais O(n)</li>
 							<li>HashMap → Accès direct O(1)</li>
@@ -83,11 +89,20 @@
 						</ul>
 					</div>
 					<div class="preuve-item">
-						<strong>📝 Tri des messages</strong>
+						<strong class="text-accent">🎮 SAE 1.01 - Algorithmes de jeu</strong>
 						<ul>
-							<li>Insertion chronologique → O(1)</li>
-							<li>Pas besoin tri complexe</li>
-							<li>Structure naturellement ordonnée</li>
+							<li>Détection collision → Vérification O(1) par case</li>
+							<li>Déplacement caisses → Algorithme de poussée</li>
+							<li>IA ennemis → Pathfinding basique</li>
+							<li>Système obscurité → Calcul zones éclairées</li>
+						</ul>
+					</div>
+					<div class="preuve-item">
+						<strong>📝 Optimisations choisies</strong>
+						<ul>
+							<li>Accès direct grille → Plus rapide que listes</li>
+							<li>Cache des images → Évite rechargements</li>
+							<li>Mise à jour partielle → Performance temps réel</li>
 						</ul>
 					</div>
 				</div>
@@ -183,18 +198,24 @@
 						</ul>
 					</div>
 				</div>
-			</section>
-
-			<!-- Projets liés -->
+			</section>			<!-- Projets liés -->
 			<section class="projets-lies">
 				<h2>Projets démontrant cette compétence</h2>
 				<div class="cards-grid">
 					<div class="card">
-						<h3><a href="../projets/projet-matezone.html">SAE 2.03 - Application de Chat</a></h3>
+						<h3><a href="../projets/sae203.html">SAE 2.03 - Application de Chat</a></h3>
 						<div class="competence-tags">
 							<span class="tag">Architecture modulaire</span>
 							<span class="tag">Structures de données</span>
 							<span class="tag">Optimisation</span>
+						</div>
+					</div>
+					<div class="card">
+						<h3><a href="../projets/sae101.html">SAE 1.01 - Jeu de Labyrinthe</a></h3>
+						<div class="competence-tags">
+							<span class="tag">Algorithmes de jeu</span>
+							<span class="tag">Optimisation temps réel</span>
+							<span class="tag">Structures efficaces</span>
 						</div>
 					</div>
 				</div>
@@ -203,7 +224,8 @@
 
 		<!-- Pied de page -->
 		<footer class="footer">
-			<p>&copy; 2025 Lucas Lafosse - Portfolio BUT Informatique</p>
+			<p>&copy; 2025 Lucas Lafosse - Étudiant BUT Informatique</p>
+			<p>IUT Informatique Le Havre - Université Le Havre Normandie</p>
 		</footer>
 	</body>
 </html>

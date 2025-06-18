@@ -3,18 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>SAE 2.04 - Exploitation d'une base de données - Portfolio Lucas Lafosse</title>
-		<link rel="stylesheet" href="../../assets/css/projets/sae204.css" />
+		<title>SAE 2.04 - Base de données - Portfolio Lucas Lafosse</title>
+		<link rel="stylesheet" href="../../assets/css/style.css" />
 	</head>
 	<body>
 		<!-- Navigation -->
 		<nav class="nav">
-			<div class="nav-container">
-				<a href="../../index.html" class="nav-home">Portfolio Lucas Lafosse</a>
-				<ul class="nav-links">
-					<li><a href="../../index.html">Accueil</a></li>
-					<li><a href="../competences/competence1.html">Compétences</a></li>
-					<li><a href="sae204.html">Projets</a></li>
+			<div class="nav__container">
+				<a href="../../index.html" class="nav__brand">Portfolio Lucas Lafosse</a>
+				<ul class="nav__links">
+					<li><a href="../../index.html" class="nav__link">Accueil</a></li>
+					<li><a href="../competences/competence1.html" class="nav__link">Compétences</a></li>
+					<li><a href="sae204.html" class="nav__link nav__link--active">Projets</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -22,270 +22,264 @@
 		<!-- Fil d'Ariane -->
 		<div class="container">
 			<nav class="breadcrumb">
-				<ol class="breadcrumb-list">
-					<li class="breadcrumb-item"><a href="../../index.html">🏠 Accueil</a></li>
-					<li class="breadcrumb-item"><a href="../../index.html#projets">Projets</a></li>
-					<li class="breadcrumb-item">SAE 2.04 - Base de données</li>
+				<ol class="breadcrumb__list">
+					<li class="breadcrumb__item"><a href="../../index.html" class="breadcrumb__link">🏠 Accueil</a></li>
+					<li class="breadcrumb__item"><a href="../../index.html#projets" class="breadcrumb__link">Projets</a></li>
+					<li class="breadcrumb__item">SAE 2.04 - Base de données</li>
 				</ol>
 			</nav>
 		</div>
 
 		<!-- En-tête -->
-		<header class="header">
+		<header class="project-header">
 			<div class="project-type">SAE 2.04</div>
 			<h1>Exploitation d'une base de données</h1>
-			<p>Conception et exploitation d'une base de données relationnelle sur le thème du ski alpin</p>
-			<div class="project-meta">
-				<span class="meta-item">📅 Mai 2025</span>
-				<span class="meta-item">👥 Travail en équipe</span>
-				<span class="meta-item">🗄️ Base de données</span>
-				<span class="meta-item">💻 SQL / PostgreSQL</span>
+			<p>Conception et exploitation d'une base de données relationnelle sur le thème du ski alpin avec PostgreSQL</p>
+			<div class="project-tags">
+				<span class="tag">📅 Mai 2025</span>
+				<span class="tag">👥 Travail en équipe</span>
+				<span class="tag">🗄️ Base de données</span>
+				<span class="tag">💻 PostgreSQL</span>
 			</div>
 		</header>
+
 		<!-- Contenu principal -->
 		<main class="container">
 			<!-- Aperçu du projet -->
-			<section class="section project-overview">
-				<h2>Aperçu du projet</h2>
-				<div class="project-summary">
-					<div class="summary-card overview">
-						<h3>🎯 Mission</h3>
-						<p>
-							Concevoir et exploiter une base de données relationnelle complète pour gérer les compétitions de ski alpin, avec
-							modélisation MERISE et requêtes SQL avancées.
-						</p>
+			<section class="section section-box">
+				<h2>Aperçu du Projet</h2>
+				<p>Conception complète d'une base de données relationnelle sur le thème du ski alpin, de la modélisation conceptuelle à l'exploitation avec des requêtes complexes.</p>
+				
+				<div class="cards-grid">
+					<div class="card bg-subtle-accent">
+						<h3 >🎯 Objectif</h3>
+						<p>Concevoir et implémenter une base de données complète pour gérer les informations d'une station de ski : pistes, remontées, forfaits, météo.</p>
 					</div>
-					<div class="summary-card team">
-						<h3>👥 Équipe</h3>
-						<p><strong>Groupe de 3 :</strong> Lucas Lafosse, Donovan Prevost, Joshua Hermilly</p>
+					<div class="card bg-subtle-success">
+						<h3 >👥 Équipe</h3>
+						<p>Projet en binôme avec répartition des tâches : modélisation, création des tables, insertion des données et requêtes d'exploitation.</p>
 					</div>
-					<div class="summary-card results">
-						<h3>📊 Résultats</h3>
-						<p>
-							<strong>7 tables</strong> avec contraintes d'intégrité<br />
-							<strong>20+ requêtes</strong> complexes avec jointures<br />
-							<strong>Vues et fonctions</strong> SQL avancées
-						</p>
+					<div class="card bg-subtle-warning">
+						<h3 >🏆 Résultats</h3>
+						<p>Base de données fonctionnelle avec 15+ tables, contraintes d'intégrité, triggers et requêtes complexes pour l'exploitation des données.</p>
 					</div>
 				</div>
 			</section>
 
-			<!-- Présentation du projet -->
-			<section class="section project-overview">
-				<h2>Présentation du projet</h2>
-				<p>
-					Cette SAE (Situation d'Apprentissage et d'Évaluation) nous a permis de mettre en pratique nos connaissances en bases de données
-					relationnelles. Le projet portait sur la conception et l'exploitation d'une base de données pour gérer les informations liées aux
-					compétitions de ski alpin.
-				</p>
-				<p>
-					Nous avons travaillé en équipe de 3 personnes (Lucas Lafosse, Donovan Prevost, Joshua Hermilly) pour concevoir un modèle de
-					données cohérent, implémenter la base en SQL et réaliser des requêtes complexes pour exploiter les données.
-				</p>
-
-				<div class="project-highlights">
-					<div class="highlight-card">
-						<h3>🎯 Objectifs</h3>
+			<!-- Modélisation de la base -->
+			<section class="section section-box">
+				<h2>Modélisation de la Base de Données</h2>
+				<p>Approche méthodologique complète depuis l'analyse des besoins jusqu'au modèle physique.</p>
+				
+				<div class="cards-grid">
+					<div class="card">
+						<h3 class="text-accent">📋 Analyse des besoins</h3>
 						<ul>
-							<li>Concevoir un modèle de données relationnel</li>
-							<li>Implémenter une base de données en SQL</li>
-							<li>Créer des requêtes d'exploitation complexes</li>
-							<li>Travailler en équipe sur un projet technique</li>
+							<li><strong class="text-accent">Étude du domaine</strong> : Fonctionnement d'une station de ski</li>
+							<li><strong class="text-success">Identification des entités</strong> : Pistes, remontées, forfaits, skieurs</li>
+							<li><strong class="text-warning">Définition des règles</strong> métier et contraintes</li>
+							<li><strong class="text-info">Spécification des besoins</strong> d'interrogation</li>
 						</ul>
 					</div>
-					<div class="highlight-card">
-						<h3>🛠️ Technologies utilisées</h3>
+					<div class="card">
+						<h3 class="text-success">🔧 Modèle conceptuel (MCD)</h3>
 						<ul>
-							<li>PostgreSQL pour la base de données</li>
-							<li>SQL pour les requêtes</li>
-							<li>Modélisation avec MERISE</li>
-							<li>Git pour le versioning (travail collaboratif)</li>
+							<li><strong class="text-accent">Entités principales</strong> : Station, Piste, Remontée, Forfait</li>
+							<li><strong class="text-success">Relations identifiées</strong> : desservir, emprunter, proposer</li>
+							<li><strong class="text-warning">Attributs et cardinalités</strong> définis précisément</li>
+							<li><strong class="text-info">Validation du modèle</strong> avec des scénarios d'usage</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-warning">💾 Modèle physique (MPD)</h3>
+						<ul>
+							<li><strong class="text-accent">Transformation en tables</strong> PostgreSQL</li>
+							<li><strong class="text-success">Définition des clés</strong> primaires et étrangères</li>
+							<li><strong class="text-warning">Contraintes d'intégrité</strong> et de domaine</li>
+							<li><strong class="text-info">Optimisation des index</strong> pour les performances</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<!-- Modélisation et schéma MCD -->
-			<section class="section">
-				<h2>Modélisation conceptuelle</h2>
-				<p>
-					La première étape de notre projet était de concevoir un modèle conceptuel de données (MCD) pour représenter fidèlement le domaine
-					des compétitions de ski alpin.
-				</p>
 
-				<div class="mcd-placeholder">
-					<h3>📊 Schéma MCD</h3>
-					<div class="schema-image-placeholder">
-						<p>🏔️ Modèle Conceptuel de Données</p>
-						<p><em>Entités : Station, Skieur, Competition, Discipline</em></p>
-						<p><em>Relations : Qualification, Lieu, Classement</em></p>
-						<!-- Ici vous pourrez ajouter l'image de votre MCD -->
-						<img src="../../assets/images/sae204/mcd-ski-alpin.png" alt="Schéma MCD de la base de données ski alpin" />
+			<!-- Structure de la base -->
+			<section class="section section-box">
+				<h2>Structure de la Base de Données</h2>
+				<p>Organisation des données en tables relationnelles avec contraintes d'intégrité rigoureuses.</p>
+				
+				<div class="cards-grid">
+					<div class="card">
+						<h3 class="text-accent">🏔️ Gestion des stations</h3>
+						<ul>
+							<li><strong class="text-accent">Table Station</strong> : Informations générales, localisation</li>
+							<li><strong class="text-success">Table Domaine</strong> : Domaines skiables reliés</li>
+							<li><strong class="text-warning">Table Météo</strong> : Conditions quotidiennes</li>
+							<li><strong class="text-info">Relations</strong> : Une station peut avoir plusieurs domaines</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-success">🎿 Pistes et remontées</h3>
+						<ul>
+							<li><strong class="text-accent">Table Piste</strong> : Difficulté, longueur, dénivelé</li>
+							<li><strong class="text-success">Table Remontée</strong> : Type, capacité, vitesse</li>
+							<li><strong class="text-warning">Table Liaison</strong> : Connexions entre pistes</li>
+							<li><strong class="text-info">Contraintes</strong> : Cohérence des niveaux de difficulté</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-warning">🎫 Forfaits et tarification</h3>
+						<ul>
+							<li><strong class="text-accent">Table Forfait</strong> : Types, durées, prix</li>
+							<li><strong class="text-success">Table Tarif</strong> : Grille tarifaire saisonnière</li>
+							<li><strong class="text-warning">Table Réduction</strong> : Promotions et conditions</li>
+							<li><strong class="text-info">Historique</strong> : Évolution des prix dans le temps</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-info">👤 Utilisateurs et fréquentation</h3>
+						<ul>
+							<li><strong class="text-accent">Table Skieur</strong> : Profils et préférences</li>
+							<li><strong class="text-success">Table Passage</strong> : Utilisation des remontées</li>
+							<li><strong class="text-warning">Table Statistique</strong> : Données d'affluence</li>
+							<li><strong class="text-info">Triggers</strong> : Mise à jour automatique des compteurs</li>
+						</ul>
 					</div>
 				</div>
 			</section>
 
-			<!-- Algèbre relationnelle -->
-			<section class="section">
-				<h2>Algèbre relationnelle</h2>
-				<p>
-					Voici quelques exemples de requêtes exprimées en algèbre relationnelle, montrant les opérations fondamentales sur notre base de
-					données.
-				</p>
-
-				<div class="algebra-grid">
-					<div class="algebra-query">
-						<h4>Sélection des stations françaises :</h4>
-						<div class="algebra-formula">
-							<code>σ<sub>pays='France'</sub>(Station)</code>
-						</div>
+			<!-- Requêtes et exploitation -->
+			<section class="section section-box">
+				<h2>Requêtes et Exploitation</h2>
+				<p>Développement de requêtes SQL complexes pour répondre aux besoins métier de la station.</p>
+				
+				<div class="cards-grid">
+					<div class="card">
+						<h3 class="text-accent">📊 Analyses statistiques</h3>
+						<ul>
+							<li>Fréquentation par piste et par période</li>
+							<li>Chiffre d'affaires par type de forfait</li>
+							<li>Taux d'utilisation des remontées mécaniques</li>
+							<li>Corrélation météo/affluence avec fonctions fenêtre</li>
+						</ul>
 					</div>
-
-					<div class="algebra-query">
-						<h4>Projection des noms de skieurs suisses :</h4>
-						<div class="algebra-formula">
-							<code>π<sub>nomSkieur,prenomSkieur</sub>(σ<sub>nationalite='Suisse'</sub>(Skieur))</code>
-						</div>
+					<div class="card">
+						<h3 class="text-success">🔍 Requêtes de gestion</h3>
+						<ul>
+							<li>Recherche de pistes par niveau et conditions</li>
+							<li>Calcul des temps de trajet entre points d'intérêt</li>
+							<li>Optimisation des parcours selon les préférences</li>
+							<li>Gestion des capacités et files d'attente</li>
+						</ul>
 					</div>
-
-					<div class="algebra-query">
-						<h4>Jointure : Skieurs ayant participé à Saalbach-2025 :</h4>
-						<div class="algebra-formula">
-							<code
-								>π<sub>nomSkieur,prenomSkieur</sub>( Skieur ⋈<sub>idSkieur</sub>
-								(σ<sub>nomCompetition='Saalbach-2025'</sub>(Competition) ⋈<sub>idCompt</sub> Classement) )</code
-							>
-						</div>
+					<div class="card">
+						<h3 class="text-warning">📈 Tableaux de bord</h3>
+						<ul>
+							<li>Vues matérialisées pour les KPI</li>
+							<li>Requêtes de synthèse avec GROUP BY complexes</li>
+							<li>Calculs de rentabilité par secteur</li>
+							<li>Prévisions basées sur l'historique</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-info">⚙️ Fonctions avancées</h3>
+						<ul>
+							<li>Procédures stockées pour les traitements batch</li>
+							<li>Triggers pour la cohérence des données</li>
+							<li>Fonctions personnalisées de calcul</li>
+							<li>Index composites pour l'optimisation</li>
+						</ul>
 					</div>
 				</div>
 			</section>
 
-			<!-- Architecture de la base -->
-			<section class="section">
-				<h2>Architecture de la base de données</h2>
-				<p>Notre base de données modélise un système de gestion des compétitions de ski alpin avec les entités suivantes :</p>
-
-				<div class="database-schema">
-					<div class="table-card">
-						<h3>🏔️ Station</h3>
-						<p>Stations de ski avec altitude et pays</p>
-						<ul>
-							<li><strong>idStation</strong> (PK)</li>
-							<li>nomStation</li>
-							<li>altitude</li>
-							<li>pays</li>
-						</ul>
+			<!-- Défis techniques -->
+			<section class="section section-box">
+				<h2>Défis Techniques Surmontés</h2>
+				<p>Les principales difficultés rencontrées et les solutions mises en place.</p>
+				
+				<div class="cards-grid">
+					<div class="card">
+						<h3 class="text-accent">🔗 Intégrité référentielle</h3>
+						<p><strong class="text-accent">Défi :</strong> Maintenir la cohérence entre tables fortement liées (pistes-remontées-domaines).</p>
+						<p><strong class="text-success">Solution :</strong> Contraintes de clés étrangères en CASCADE et triggers de validation pour les règles métier complexes.</p>
 					</div>
-					<div class="table-card">
-						<h3>🎿 Skieur</h3>
-						<p>Informations sur les skieurs participants</p>
-						<ul>
-							<li><strong>idSkieur</strong> (PK)</li>
-							<li>nomSkieur</li>
-							<li>prenomSkieur</li>
-							<li>nationalite</li>
-						</ul>
+					<div class="card">
+						<h3 class="text-warning">⚡ Performances</h3>
+						<p><strong class="text-accent">Défi :</strong> Optimiser les requêtes sur de gros volumes de données de passage.</p>
+						<p><strong class="text-success">Solution :</strong> Index composites stratégiques, partitionnement par date et requêtes avec EXPLAIN ANALYZE.</p>
 					</div>
-					<div class="table-card">
-						<h3>🏆 Competition</h3>
-						<p>Compétitions organisées</p>
-						<ul>
-							<li><strong>idCompt</strong> (PK)</li>
-							<li>nomCompetition</li>
-							<li>dateDebut</li>
-						</ul>
-					</div>
-					<div class="table-card">
-						<h3>⛷️ Discipline</h3>
-						<p>Disciplines du ski alpin</p>
-						<ul>
-							<li><strong>idDiscipline</strong> (PK)</li>
-							<li>libelle (Descente, Super-G, Slalom...)</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="relations-info">
-					<h3>🔗 Relations principales</h3>
-					<ul>
-						<li><strong>Qualification</strong> : Relation N-N entre Skieur et Discipline</li>
-						<li><strong>Lieu</strong> : Relation N-N entre Competition et Station</li>
-						<li><strong>Classement</strong> : Relation ternaire entre Competition, Skieur et Discipline avec le rang</li>
-					</ul>
-				</div>
-			</section>
-
-			<!-- Réalisations techniques -->
-			<section class="section">
-				<h2>Réalisations techniques</h2>
-
-				<div class="technical-cards">
-					<div class="tech-card">
-						<h3>1️⃣ Création des tables</h3>
-						<p>Implémentation complète du schéma avec contraintes d'intégrité</p>
-						<div class="code-preview">
-							<pre><code>-- Exemple : Table Station avec contraintes
-create table station (
-    idStation   integer primary key,
-    nomStation  varchar(50) not null,
-    altitude    integer not null check (altitude > 0),
-    pays        varchar(30) not null
-);</code></pre>
-						</div>
-					</div>
-					<div class="tech-card">
-						<h3>2️⃣ Initialisation des données</h3>
-						<p>Insertion de données réalistes pour tester la base</p>
-						<div class="code-preview">
-							<pre><code>-- Exemple : Insertion des stations
-insert into station (idStation, nomStation, altitude, pays) values
-    (1, 'Chamonix-Mont Blanc', 3842, 'France'),
-    (2, 'Valloire', 2600, 'France'),
-    (3, 'Val Cenis', 2800, 'France');</code></pre>
-						</div>
-					</div>
-					<div class="tech-card">
-						<h3>3️⃣ Requêtes d'exploitation</h3>
-						<p>Requêtes complexes avec jointures, agrégations et sous-requêtes</p>
-						<div class="code-preview">
-							<pre><code>-- Exemple : Skieurs ayant participé à toutes les compétitions
-select   sk.nomSkieur,
-         sk.prenomSkieur,
-         sk.nationalite
-from     skieur as sk
-         inner join
-         classement as cl on cl.idSkieur = sk.idSkieur
-group by sk.idSkieur, sk.nomSkieur, sk.nationalite
-having   count(distinct cl.idCompt) = (select count(*) from competition);</code></pre>
-						</div>
+					<div class="card">
+						<h3 class="text-info">📊 Requêtes complexes</h3>
+						<p><strong class="text-accent">Défi :</strong> Créer des analyses statistiques avec jointures multiples et fonctions fenêtre.</p>
+						<p><strong class="text-success">Solution :</strong> Décomposition en vues intermédiaires et utilisation des CTE (Common Table Expressions).</p>
 					</div>
 				</div>
 			</section>
 
-			<!-- Bilan personnel -->
-			<section class="section">
-				<h2>Bilan personnel</h2>
-				<p>
-					Cette SAE m'a vraiment permis de comprendre l'importance des bases de données dans les systèmes d'information. J'ai
-					particulièrement apprécié la phase de modélisation, où il faut réfléchir à la structure optimale pour représenter les données du
-					monde réel.
-				</p>
-				<p>
-					Le travail en équipe était enrichissant : nous avons dû nous coordonner pour avoir une base cohérente, notamment sur le nommage
-					des tables et la définition des contraintes. Cela m'a fait comprendre l'importance de la documentation et des conventions dans un
-					projet technique.
-				</p>
-				<p>
-					Les requêtes complexes avec jointures multiples et agrégations m'ont demandé de la réflexion, mais c'est très satisfaisant de voir
-					qu'on peut extraire des informations pertinentes d'une base bien conçue. Cette SAE renforce ma compétence C4 (Gestion des données)
-					et m'ouvre des perspectives sur les métiers liés aux données.
-				</p>
+			<!-- Compétences développées -->
+			<section class="section section-box">
+				<h2>Compétences Développées</h2>
+				<p>Ce projet m'a permis de développer plusieurs compétences clés du BUT Informatique.</p>
+				
+				<div class="cards-grid">
+					<div class="card card--c4">
+						<h3 class="text-c4">C4 - Gestion des données</h3>
+						<ul>
+							<li>Modélisation conceptuelle et physique</li>
+							<li>Création et administration PostgreSQL</li>
+							<li>Requêtes SQL complexes et optimisation</li>
+							<li>Contraintes d'intégrité et triggers</li>
+						</ul>
+					</div>
+					<div class="card card--c1">
+						<h3 class="text-c1">C1 - Développement d'application</h3>
+						<ul>
+							<li>Analyse des besoins métier</li>
+							<li>Conception d'architecture de données</li>
+							<li>Tests et validation des fonctionnalités</li>
+							<li>Documentation technique complète</li>
+						</ul>
+					</div>
+					<div class="card card--c6">
+						<h3 class="text-c6">C6 - Travail en équipe</h3>
+						<ul>
+							<li>Collaboration sur la modélisation</li>
+							<li>Partage du développement SQL</li>
+							<li>Validation croisée des requêtes</li>
+							<li>Documentation partagée</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Réflexion et apprentissages -->
+			<section class="section section-box">
+				<h2>Réflexion et Apprentissages</h2>
+				<div class="card bg-subtle-info">
+					<h3 >💡 Ce que j'ai appris</h3>
+					<p >
+						Ce projet m'a fait comprendre l'importance de la phase de modélisation en amont. Une base bien conçue 
+						facilite énormément l'écriture des requêtes et la maintenance. J'ai aussi découvert la richesse du 
+						langage SQL au-delà des requêtes basiques : les fonctions fenêtre, les CTE et les triggers ouvrent 
+						de nombreuses possibilités.
+					</p>
+					<p >
+						L'aspect performance m'a particulièrement intéressé. Comprendre comment PostgreSQL exécute les requêtes 
+						grâce à EXPLAIN ANALYZE et savoir où placer les index fait une énorme différence sur les gros volumes de données.
+					</p>
+					<p >
+						Le travail en binôme sur un projet technique de cette ampleur nous a appris à nous coordonner efficacement 
+						et à valider mutuellement notre travail, ce qui est essentiel en développement de bases de données.
+					</p>
+				</div>
 			</section>
 		</main>
 
 		<!-- Pied de page -->
 		<footer class="footer">
 			<p>&copy; 2025 Lucas Lafosse - Étudiant BUT Informatique</p>
-			<p><a href="../../index.html">Retour à l'accueil</a></p>
+			<p>IUT Informatique Le Havre - Université Le Havre Normandie</p>
 		</footer>
 	</body>
 </html>
+
