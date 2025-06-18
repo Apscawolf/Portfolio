@@ -12,7 +12,9 @@
 	
 	/* Couleurs des compétences */
 	--c1-color: #e74c3c; /* Rouge pour C1 - Développement */
+	--c2-color: #f39c12; /* Orange pour C2 - Optimisation */
 	--c3-color: #f1c40f; /* Jaune pour C3 - Administration */
+	--c4-color: #27ae60; /* Vert pour C4 - Gestion des données */
 	--c6-color: #9b59b6; /* Violet pour C6 - Travail en équipe */
 	
 	/* Couleurs de fond et texte */
@@ -329,6 +331,28 @@ body {
 	font-weight: bold;
 }
 
+/* Images et contenu responsive */
+img, .image-demo {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: var(--radius);
+	box-shadow: 0 4px 15px var(--shadow);
+}
+
+/* Conteneurs d'images */
+.conteneur-image, .image-container {
+	max-width: 100%;
+	overflow: hidden;
+	border-radius: var(--radius);
+}
+
+/* S'assurer que tout contenu reste dans les limites */
+.section-projet * {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
 /* Compétences développées */
 .competences-grid {
 	display: grid;
@@ -349,9 +373,19 @@ body {
 	border-left: 4px solid var(--c1-color);
 }
 
+.competence-card.c2 {
+	background: linear-gradient(135deg, rgba(243, 156, 18, 0.1), rgba(243, 156, 18, 0.05));
+	border-left: 4px solid var(--c2-color);
+}
+
 .competence-card.c3 {
 	background: linear-gradient(135deg, rgba(241, 196, 15, 0.1), rgba(241, 196, 15, 0.05));
 	border-left: 4px solid var(--c3-color);
+}
+
+.competence-card.c4 {
+	background: linear-gradient(135deg, rgba(39, 174, 96, 0.1), rgba(39, 174, 96, 0.05));
+	border-left: 4px solid var(--c4-color);
 }
 
 .competence-card.c6 {
@@ -373,8 +407,16 @@ body {
 	color: var(--c1-color);
 }
 
+.competence-card.c2 h3 {
+	color: var(--c2-color);
+}
+
 .competence-card.c3 h3 {
 	color: var(--c3-color);
+}
+
+.competence-card.c4 h3 {
+	color: var(--c4-color);
 }
 
 .competence-card.c6 h3 {
@@ -411,8 +453,16 @@ body {
 	color: var(--c1-color);
 }
 
+.competence-card.c2 li::before {
+	color: var(--c2-color);
+}
+
 .competence-card.c3 li::before {
 	color: var(--c3-color);
+}
+
+.competence-card.c4 li::before {
+	color: var(--c4-color);
 }
 
 .competence-card.c6 li::before {
@@ -460,6 +510,7 @@ body {
 	
 	.section-projet {
 		padding: var(--gap);
+		margin-bottom: var(--gap);
 	}
 	
 	.liens-projet {
@@ -468,5 +519,41 @@ body {
 	
 	.contenu-principal {
 		padding: 0 var(--gap-sm);
+	}
+	
+	/* Images responsive */
+	img, .image-demo {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+	
+	/* Conteneurs responsive */
+	.conteneur-image, .image-container {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	
+	/* Tables responsive */
+	table {
+		width: 100%;
+		overflow-x: auto;
+		display: block;
+		white-space: nowrap;
+	}
+	
+	/* Eviter le débordement horizontal */
+	body {
+		overflow-x: hidden;
+	}
+	
+	.contenu-principal {
+		overflow-x: hidden;
+	}
+	
+	.section-projet {
+		overflow-x: hidden;
 	}
 }
