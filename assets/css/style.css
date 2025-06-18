@@ -100,6 +100,11 @@ ul {
 	margin: var(--space-2xl) 0;
 }
 
+.section-box li {
+	list-style: disc;
+	margin-left: var(--space-lg);
+}
+
 /* NAVIGATION */
 .nav {
 	position: fixed;

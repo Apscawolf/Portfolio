@@ -44,185 +44,303 @@
 		</header>
 
 		<!-- Contenu principal -->
-		<main class="container">
-			<!-- Aperçu du projet -->
+		<main class="container">			<!-- Aperçu du projet -->
 			<section class="section section-box">
 				<h2>Aperçu du Projet</h2>
-				<p>Création d'une application de messagerie instantanée complète avec architecture client-serveur, interface graphique moderne et déploiement conteneurisé.</p>
+				<p><strong>MateZone</strong> est une application de chat collaborative développée en Java Swing permettant la communication en temps réel entre utilisateurs. Le projet implémente une architecture client-serveur avec déploiement Docker pour une solution de messagerie complète.</p>
 				
 				<div class="cards-grid">
 					<div class="card bg-subtle-accent">
-						<h3 >🎯 Objectif</h3>
-						<p>Développer une application de chat en temps réel avec interface graphique, serveur multi-clients et déploiement Docker professionnel.</p>
+						<h3>🎯 Objectif</h3>
+						<p>Développer une application de messagerie instantanée complète avec interface graphique moderne, serveur multi-clients et déploiement Docker professionnel.</p>
 					</div>
 					<div class="card bg-subtle-success">
-						<h3 >👥 Équipe</h3>
-						<p>Projet en équipe avec répartition des rôles : développement client, serveur, interface graphique et DevOps.</p>
+						<h3>👥 Équipe</h3>
+						<p>Projet en équipe avec répartition des rôles : développement client, serveur, interface graphique et DevOps. Développement collaboratif avec Git et repository partagé.</p>
 					</div>
 					<div class="card bg-subtle-warning">
-						<h3 >🏆 Résultats</h3>
-						<p>Application fonctionnelle avec interface moderne, serveur stable gérant plusieurs clients simultanés et déploiement automatisé.</p>
+						<h3>🏆 Résultats</h3>
+						<p>Application fonctionnelle avec interface moderne, serveur stable gérant plusieurs clients simultanés et déploiement automatisé avec Docker.</p>
 					</div>
 				</div>
-			</section>
 
-			<!-- Architecture technique -->
+				<div class="project-links" style="text-align: center; margin-top: var(--space-lg);">
+					<a href="https://github.com/M8-Yuriko/docker-sae203" target="_blank" class="tag" style="text-decoration: none; margin: var(--space-xs);">
+						📂 Repository GitHub
+					</a>
+					<a href="https://m8-yuriko.github.io/docker-sae203/" target="_blank" class="tag" style="text-decoration: none; margin: var(--space-xs);">
+						🌐 Site de Présentation
+					</a>
+				</div>
+			</section>			<!-- Fonctionnalités principales -->
 			<section class="section section-box">
-				<h2>Architecture Technique</h2>
-				<p>Solution client-serveur avec Java Swing côté client et serveur multi-threaded pour gérer les connexions simultanées.</p>
+				<h2>Fonctionnalités Principales</h2>
+				<p>Application complète avec toutes les fonctionnalités essentielles d'une messagerie moderne et collaborative.</p>
 				
 				<div class="cards-grid">
 					<div class="card">
-						<h3 class="text-accent">💻 Client Java Swing</h3>
+						<h3>🔐 Système d'Authentification</h3>
 						<ul>
-							<li><strong class="text-accent">Interface graphique moderne</strong> avec Swing</li>
-							<li><strong class="text-success">Gestion des connexions</strong> TCP/IP</li>
-							<li><strong class="text-warning">Chat en temps réel</strong> avec mise à jour automatique</li>
-							<li><strong class="text-info">Gestion des utilisateurs</strong> et sessions</li>
+							<li>Connexion utilisateur avec pseudo/mot de passe</li>
+							<li>Création de nouveaux comptes</li>
+							<li>Gestion des sessions utilisateur</li>
+							<li>Interface de connexion intuitive</li>
 						</ul>
 					</div>
 					<div class="card">
-						<h3 class="text-success">🖥️ Serveur Multi-clients</h3>
+						<h3>💬 Chat Global</h3>
 						<ul>
-							<li><strong class="text-accent">Architecture multi-threadée</strong> en Java</li>
-							<li><strong class="text-success">Gestion des connexions</strong> simultanées</li>
-							<li><strong class="text-warning">Diffusion des messages</strong> en temps réel</li>
-							<li><strong class="text-info">Persistance des données</strong> en fichiers</li>
+							<li>Messagerie publique en temps réel</li>
+							<li>Affichage des messages avec couleurs par utilisateur</li>
+							<li>Rafraîchissement automatique des messages</li>
+							<li>Synchronisation avec le serveur</li>
 						</ul>
 					</div>
 					<div class="card">
-						<h3 class="text-warning">🐳 Déploiement Docker</h3>
+						<h3>📨 Messages Privés</h3>
 						<ul>
-							<li><strong class="text-accent">Conteneurisation</strong> de l'application</li>
-							<li><strong class="text-success">Images Docker</strong> optimisées</li>
-							<li><strong class="text-warning">Docker Compose</strong> pour l'orchestration</li>
-							<li><strong class="text-info">Déploiement automatisé</strong> et portable</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<!-- Fonctionnalités développées -->
-			<section class="section section-box">
-				<h2>Fonctionnalités Développées</h2>
-				<p>Application complète avec toutes les fonctionnalités essentielles d'une messagerie moderne.</p>
-				
-				<div class="cards-grid">
-					<div class="card">
-						<h3 class="text-accent">💬 Messagerie</h3>
-						<ul>
-							<li>Chat en temps réel multi-utilisateurs</li>
-							<li>Envoi et réception de messages instantanés</li>
-							<li>Historique des conversations</li>
-							<li>Indicateurs de statut des utilisateurs</li>
+							<li>Conversations privées entre utilisateurs</li>
+							<li>Fenêtres dédiées pour chaque conversation</li>
+							<li>Historique des messages persistant</li>
+							<li>Gestion des fenêtres multiples</li>
 						</ul>
 					</div>
 					<div class="card">
-						<h3 class="text-success">👤 Gestion utilisateurs</h3>
+						<h3>👥 Gestion des Utilisateurs</h3>
 						<ul>
-							<li>Système d'authentification</li>
-							<li>Profils utilisateurs personnalisables</li>
 							<li>Liste des utilisateurs connectés</li>
-							<li>Statuts de connexion (en ligne/hors ligne)</li>
+							<li>Rafraîchissement automatique de la liste</li>
+							<li>Sélection d'utilisateur pour messages privés</li>
+							<li>Interface utilisateur dynamique</li>
 						</ul>
 					</div>
 					<div class="card">
-						<h3 class="text-warning">🎨 Interface utilisateur</h3>
+						<h3>🖼️ Partage d'Images</h3>
 						<ul>
-							<li>Interface Swing moderne et intuitive</li>
-							<li>Design responsive et ergonomique</li>
-							<li>Thèmes visuels personnalisables</li>
-							<li>Notifications et alertes visuelles</li>
+							<li>Sélection et téléchargement d'images</li>
+							<li>Copie automatique dans le dossier utilisateur</li>
+							<li>Affichage des images sélectionnées</li>
+							<li>Gestion des extensions de fichiers</li>
 						</ul>
 					</div>
 					<div class="card">
-						<h3 class="text-info">⚙️ Administration</h3>
+						<h3>🐳 Architecture Docker</h3>
 						<ul>
-							<li>Panneau d'administration serveur</li>
-							<li>Monitoring des connexions actives</li>
-							<li>Logs détaillés des activités</li>
-							<li>Gestion des permissions utilisateurs</li>
+							<li>Containerisation complète de l'application</li>
+							<li>Serveur Apache + PHP + Java</li>
+							<li>Scripts de déploiement automatisés</li>
+							<li>Configuration multi-ports (80, 8080)</li>
 						</ul>
-					</div>
-				</div>
+					</div>				</div>
 			</section>
 
-			<!-- Défis techniques -->
+			<!-- Démonstration visuelle -->
 			<section class="section section-box">
-				<h2>Défis Techniques Surmontés</h2>
-				<p>Les principales difficultés rencontrées et les solutions apportées lors du développement.</p>
+				<h2>Démonstration Visuelle</h2>
+				<p>Captures d'écran de l'application MateZone en fonctionnement, montrant les principales interfaces et fonctionnalités.</p>
 				
 				<div class="cards-grid">
 					<div class="card">
-						<h3 class="text-accent">🔗 Communication Client-Serveur</h3>
-						<p><strong class="text-accent">Défi :</strong> Gérer la communication bidirectionnelle en temps réel entre clients et serveur.</p>
-						<p><strong class="text-success">Solution :</strong> Implémentation de sockets TCP avec threads dédiés pour chaque client et protocole de messages structuré.</p>
+						<div style="text-align: center; margin-bottom: var(--space-md);">
+							<img src="../../assets/images/matezone/matezone-vue1.png" alt="Interface principale MateZone" style="max-width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+						</div>
+						<h3>🏠 Interface Principale</h3>
+						<p>Vue principale de l'application MateZone montrant:</p>
+						<ul>
+							<li>Liste des utilisateurs connectés (Admin, User, SZEDFOGH, etc.)</li>
+							<li>Zone de chat global avec messages colorés par utilisateur</li>
+							<li>Fonctionnalité de photo de profil personnelle</li>
+							<li>Interface utilisateur Java Swing moderne et intuitive</li>
+						</ul>
 					</div>
 					<div class="card">
-						<h3 class="text-warning">🔄 Synchronisation</h3>
-						<p><strong class="text-accent">Défi :</strong> Éviter les conflits d'accès concurrent aux ressources partagées.</p>
-						<p><strong class="text-success">Solution :</strong> Utilisation de synchronized blocks et de Collections thread-safe pour protéger les données critiques.</p>
-					</div>
-					<div class="card">
-						<h3 class="text-info">🐳 Conteneurisation</h3>
-						<p><strong class="text-accent">Défi :</strong> Déployer l'application dans un environnement Docker fonctionnel.</p>
-						<p><strong class="text-success">Solution :</strong> Création d'images Docker légères avec JRE, configuration réseau appropriée et Docker Compose.</p>
+						<div style="text-align: center; margin-bottom: var(--space-md);">
+							<img src="../../assets/images/matezone/matezone-vue2.png" alt="Fenêtre de messages privés" style="max-width: 100%; height: auto; border-radius: var(--radius); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+						</div>
+						<h3>💬 Messages Privés</h3>
+						<p>Fenêtre dédiée aux conversations privées démontrant:</p>
+						<ul>
+							<li>Interface de chat privé entre utilisateurs (Jojo1 & QSDQSD)</li>
+							<li>Historique des messages persistant</li>
+							<li>Zone de saisie et bouton d'envoi</li>
+							<li>Gestion des fenêtres multiples pour chaque conversation</li>
+						</ul>
 					</div>
 				</div>
 			</section>
 
-			<!-- Compétences développées -->
+			<!-- Technologies et Architecture -->
+			<section class="section section-box">
+				<h2>Technologies et Architecture</h2>
+				<p>Stack technique complète avec architecture Docker et développement collaboratif.</p>
+				
+				<div class="cards-grid">
+					<div class="card">
+						<h3>☕ Frontend Client</h3>
+						<div style="margin-bottom: var(--space-sm);">
+							<span class="tag" style="margin: 2px;">Java 17</span>
+							<span class="tag" style="margin: 2px;">Swing GUI</span>
+							<span class="tag" style="margin: 2px;">AWT Events</span>
+							<span class="tag" style="margin: 2px;">Multi-threading</span>
+						</div>
+						<ul>
+							<li>Interface graphique moderne avec Java Swing</li>
+							<li>Gestion des événements utilisateur</li>
+							<li>Communication temps réel avec le serveur</li>
+							<li>Threading pour interface responsive</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>🌐 Backend Serveur</h3>
+						<div style="margin-bottom: var(--space-sm);">
+							<span class="tag" style="margin: 2px;">Apache 2</span>
+							<span class="tag" style="margin: 2px;">PHP 8</span>
+							<span class="tag" style="margin: 2px;">HTTP/REST</span>
+							<span class="tag" style="margin: 2px;">File System</span>
+						</div>
+						<ul>
+							<li>Serveur Apache pour hébergement web</li>
+							<li>Scripts PHP pour API REST</li>
+							<li>Gestion des fichiers et persistance</li>
+							<li>Communication HTTP avec les clients</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>🐳 DevOps</h3>
+						<div style="margin-bottom: var(--space-sm);">
+							<span class="tag" style="margin: 2px;">Docker</span>
+							<span class="tag" style="margin: 2px;">Debian</span>
+							<span class="tag" style="margin: 2px;">Bash Scripts</span>
+							<span class="tag" style="margin: 2px;">GitHub</span>
+						</div>
+						<ul>
+							<li>Containerisation complète avec Docker</li>
+							<li>Scripts de déploiement automatisés</li>
+							<li>Configuration multi-services</li>
+							<li>Versionning collaboratif avec Git</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- Apprentissages et Défis -->
+			<section class="section section-box">
+				<h2>Apprentissages et Défis</h2>
+				<p>Les principales difficultés rencontrées, les solutions apportées et les apprentissages clés de ce projet.</p>
+				
+				<div class="cards-grid">
+					<div class="card">
+						<h3>Défis Techniques</h3>
+						<ul>
+							<li><strong>Synchronisation temps réel :</strong> Mise en place du rafraîchissement automatique des messages</li>
+							<li><strong>Gestion des threads :</strong> Interface responsive sans blocage de l'UI</li>
+							<li><strong>Communication HTTP :</strong> Implémentation des requêtes client-serveur</li>
+							<li><strong>Dockerisation :</strong> Configuration multi-services dans un conteneur</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>Apprentissages Clés</h3>
+						<ul>
+							<li><strong>Architecture client-serveur :</strong> Compréhension des protocoles de communication</li>
+							<li><strong>Swing avancé :</strong> Maîtrise des composants graphiques complexes</li>
+							<li><strong>Gestion de fichiers :</strong> Persistance et synchronisation des données</li>
+							<li><strong>DevOps :</strong> Containerisation et automatisation du déploiement</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>Résultats Obtenus</h3>
+						<ul>
+							<li>Application fonctionnelle avec interface utilisateur moderne</li>
+							<li>Communication temps réel stable et fiable</li>
+							<li>Déploiement automatisé avec Docker</li>
+							<li>Code source documenté et maintenable</li>
+						</ul>
+					</div>
+				</div>
+			</section>			<!-- Compétences développées -->
 			<section class="section section-box">
 				<h2>Compétences Développées</h2>
 				<p>Ce projet m'a permis de développer plusieurs compétences clés du BUT Informatique.</p>
-						<div class="cards-grid">
+				
+				<div class="cards-grid">
 					<div class="card card-c1">
-						<h3>C1 - Développement d'application</h3>
+						<h3>C1 - Développement d'Application</h3>
 						<ul>
-							<li>Architecture client-serveur en Java</li>
-							<li>Programmation multi-threadée</li>
-							<li>Interface graphique avec Swing</li>
-							<li>Gestion des protocoles réseau</li>
+							<li>Conception et implémentation d'une interface graphique complexe</li>
+							<li>Architecture MVC avec séparation des couches</li>
+							<li>Gestion des événements et interactions utilisateur</li>
+							<li>Documentation du code et bonnes pratiques Java</li>
+						</ul>
+					</div>
+					<div class="card card-c2">
+						<h3>C2 - Optimisation des Applications</h3>
+						<ul>
+							<li>Optimisation des performances avec rafraîchissement automatique</li>
+							<li>Gestion mémoire et threads pour l'interface temps réel</li>
+							<li>Algorithmes de synchronisation des données</li>
+							<li>Traitement efficace des fichiers et flux de données</li>
 						</ul>
 					</div>
 					<div class="card card-c3">
-						<h3>C3 - Administration systèmes</h3>
+						<h3>C3 - Administration Systèmes</h3>
 						<ul>
-							<li>Déploiement avec Docker</li>
-							<li>Configuration réseau et ports</li>
-							<li>Monitoring et logs système</li>
-							<li>Orchestration avec Docker Compose</li>
+							<li>Configuration et déploiement avec Docker</li>
+							<li>Administration serveur Apache et services PHP</li>
+							<li>Gestion des ports et communications réseau</li>
+							<li>Scripts d'automatisation du déploiement</li>
+						</ul>
+					</div>
+					<div class="card card-c4">
+						<h3>C4 - Gestion des Données</h3>
+						<ul>
+							<li>Persistance des données en fichiers structurés</li>
+							<li>Synchronisation des données client-serveur</li>
+							<li>Gestion des utilisateurs et authentification</li>
+							<li>Sauvegarde et récupération des conversations</li>
+						</ul>
+					</div>
+					<div class="card card-c5">
+						<h3>C5 - Conduite de Projet</h3>
+						<ul>
+							<li>Planification et organisation du développement</li>
+							<li>Utilisation de Git pour le versionning collaboratif</li>
+							<li>Documentation technique et utilisateur</li>
+							<li>Tests et validation des fonctionnalités</li>
 						</ul>
 					</div>
 					<div class="card card-c6">
-						<h3>C6 - Travail en équipe</h3>
+						<h3>C6 - Travail en Équipe</h3>
 						<ul>
-							<li>Développement collaboratif</li>
-							<li>Répartition des modules</li>
-							<li>Intégration et tests</li>
-							<li>Documentation partagée</li>
+							<li>Développement collaboratif avec repository partagé</li>
+							<li>Répartition des tâches et coordination</li>
+							<li>Communication technique entre développeurs</li>
+							<li>Intégration et résolution de conflits de code</li>
 						</ul>
 					</div>
 				</div>
-			</section>
-
-			<!-- Réflexion et apprentissages -->
+			</section>			<!-- Réflexion et apprentissages -->
 			<section class="section section-box">
 				<h2>Réflexion et Apprentissages</h2>
 				<div class="card bg-subtle-info">
-					<h3 >💡 Ce que j'ai appris</h3>
-					<p >
+					<h3>💡 Ce que j'ai appris</h3>
+					<p>
 						Ce projet m'a fait découvrir les complexités du développement réseau et de l'architecture client-serveur. 
 						La gestion des threads et de la synchronisation était particulièrement challengeante, mais très formatrice 
 						pour comprendre les enjeux de la programmation concurrente.
 					</p>
-					<p >
+					<p>
 						L'aspect Docker était nouveau pour moi et m'a ouvert les yeux sur l'importance du déploiement et de la 
-						portabilité des applications. C'est un outil que je compte utiliser dans mes futurs projets.
+						portabilité des applications. Configurer un environnement multi-services dans un conteneur m'a appris 
+						les bases du DevOps et de l'administration système.
 					</p>
-					<p >
+					<p>
 						Le travail en équipe sur un projet technique de cette ampleur m'a appris l'importance de la communication 
-						et de la documentation. Coordonner le développement de modules interdépendants demande une organisation rigoureuse.
+						et de la documentation. Coordonner le développement de modules interdépendants demande une organisation rigoureuse 
+						et une bonne maîtrise des outils de versionning comme Git.
+					</p>
+					<p>
+						Au niveau technique, maîtriser Java Swing pour créer des interfaces graphiques complexes et réactives 
+						m'a donné une solide base en programmation orientée événements. La gestion des fichiers pour la persistance 
+						des données m'a également fait comprendre l'importance de bien structurer ses données.
 					</p>
 				</div>
 			</section>
