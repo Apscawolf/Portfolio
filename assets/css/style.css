@@ -11,7 +11,7 @@
 	--success: #27ae60;
 	--warning: #f39c12;
 	--info: #9b59b6;
-	
+
 	/* Couleurs des compétences */
 	--c1-color: #e74c3c;
 	--c2-color: #f39c12;
@@ -19,10 +19,10 @@
 	--c4-color: #3498db;
 	--c5-color: #9b59b6;
 	--c6-color: #e67e22;
-	
+
 	/* Couleur des SAE */
 	--sae-color: #8e44ad;
-	
+
 	/* Couleurs neutres */
 	--white: #ffffff;
 	--gray-50: #f8f9fa;
@@ -30,7 +30,7 @@
 	--gray-200: #dee2e6;
 	--gray-500: #6c757d;
 	--gray-800: #212529;
-	
+
 	/* Espacements */
 	--space-xs: 0.25rem;
 	--space-sm: 0.5rem;
@@ -39,7 +39,7 @@
 	--space-xl: 2rem;
 	--space-2xl: 3rem;
 	--space-3xl: 4rem;
-	
+
 	/* Rayons et ombres */
 	--radius: 8px;
 	--radius-lg: 16px;
@@ -55,7 +55,7 @@
 }
 
 body {
-	font-family: 'Segoe UI', system-ui, sans-serif;
+	font-family: "Segoe UI", system-ui, sans-serif;
 	line-height: 1.6;
 	font-size: 20px;
 	color: var(--gray-800);
@@ -63,7 +63,12 @@ body {
 	padding-top: 70px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	line-height: 1.2;
 	margin-bottom: var(--space-md);
 }
@@ -158,7 +163,7 @@ ul {
 }
 
 .nav__link::before {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: -2px;
 	left: 50%;
@@ -202,7 +207,7 @@ ul {
 }
 
 .breadcrumb__item:not(:last-child)::after {
-	content: '→';
+	content: "→";
 	margin-left: var(--space-sm);
 	color: var(--gray-500);
 }
@@ -515,7 +520,7 @@ ul {
 	background: var(--gray-50);
 	padding: var(--space-lg);
 	border-radius: var(--radius);
-	
+
 	border-left: 4px solid var(--primary);
 }
 
@@ -589,12 +594,30 @@ ul {
 }
 
 /* En-têtes colorés par compétence */
-.competences-matrix th:nth-child(2) { background: var(--c1-color); color: var(--white); }
-.competences-matrix th:nth-child(3) { background: var(--c2-color); color: var(--white); }
-.competences-matrix th:nth-child(4) { background: var(--c3-color); color: var(--white); }
-.competences-matrix th:nth-child(5) { background: var(--c4-color); color: var(--white); }
-.competences-matrix th:nth-child(6) { background: var(--c5-color); color: var(--white); }
-.competences-matrix th:nth-child(7) { background: var(--c6-color); color: var(--white); }
+.competences-matrix th:nth-child(2) {
+	background: var(--c1-color);
+	color: var(--white);
+}
+.competences-matrix th:nth-child(3) {
+	background: var(--c2-color);
+	color: var(--white);
+}
+.competences-matrix th:nth-child(4) {
+	background: var(--c3-color);
+	color: var(--white);
+}
+.competences-matrix th:nth-child(5) {
+	background: var(--c4-color);
+	color: var(--white);
+}
+.competences-matrix th:nth-child(6) {
+	background: var(--c5-color);
+	color: var(--white);
+}
+.competences-matrix th:nth-child(7) {
+	background: var(--c6-color);
+	color: var(--white);
+}
 
 .project-name {
 	text-align: left !important;
@@ -626,12 +649,24 @@ ul {
 }
 
 /* Cases cochées avec couleurs par compétence */
-.competence-cell:nth-child(2).checked::before { background: var(--c1-color); }
-.competence-cell:nth-child(3).checked::before { background: var(--c2-color); }
-.competence-cell:nth-child(4).checked::before { background: var(--c3-color); }
-.competence-cell:nth-child(5).checked::before { background: var(--c4-color); }
-.competence-cell:nth-child(6).checked::before { background: var(--c5-color); }
-.competence-cell:nth-child(7).checked::before { background: var(--c6-color); }
+.competence-cell:nth-child(2).checked::before {
+	background: var(--c1-color);
+}
+.competence-cell:nth-child(3).checked::before {
+	background: var(--c2-color);
+}
+.competence-cell:nth-child(4).checked::before {
+	background: var(--c3-color);
+}
+.competence-cell:nth-child(5).checked::before {
+	background: var(--c4-color);
+}
+.competence-cell:nth-child(6).checked::before {
+	background: var(--c5-color);
+}
+.competence-cell:nth-child(7).checked::before {
+	background: var(--c6-color);
+}
 
 /* LÉGENDE */
 .legend {
@@ -681,20 +716,44 @@ ul {
 }
 
 /* THÈMES PAR COMPÉTENCE */
-.competence-1 { --theme-color: var(--c1-color); }
-.competence-2 { --theme-color: var(--c2-color); }
-.competence-3 { --theme-color: var(--c3-color); }
-.competence-4 { --theme-color: var(--c4-color); }
-.competence-5 { --theme-color: var(--c5-color); }
-.competence-6 { --theme-color: var(--c6-color); }
+.competence-1 {
+	--theme-color: var(--c1-color);
+}
+.competence-2 {
+	--theme-color: var(--c2-color);
+}
+.competence-3 {
+	--theme-color: var(--c3-color);
+}
+.competence-4 {
+	--theme-color: var(--c4-color);
+}
+.competence-5 {
+	--theme-color: var(--c5-color);
+}
+.competence-6 {
+	--theme-color: var(--c6-color);
+}
 
 /* En-têtes thématiques par compétence */
-.competence-1 .competence-header { background: linear-gradient(135deg, var(--c1-color), #c0392b); }
-.competence-2 .competence-header { background: linear-gradient(135deg, var(--c2-color), #d68910); }
-.competence-3 .competence-header { background: linear-gradient(135deg, var(--c3-color), #239b56); }
-.competence-4 .competence-header { background: linear-gradient(135deg, var(--c4-color), #2980b9); }
-.competence-5 .competence-header { background: linear-gradient(135deg, var(--c5-color), #8e44ad); }
-.competence-6 .competence-header { background: linear-gradient(135deg, var(--c6-color), #d35400); }
+.competence-1 .competence-header {
+	background: linear-gradient(135deg, var(--c1-color), #c0392b);
+}
+.competence-2 .competence-header {
+	background: linear-gradient(135deg, var(--c2-color), #d68910);
+}
+.competence-3 .competence-header {
+	background: linear-gradient(135deg, var(--c3-color), #239b56);
+}
+.competence-4 .competence-header {
+	background: linear-gradient(135deg, var(--c4-color), #2980b9);
+}
+.competence-5 .competence-header {
+	background: linear-gradient(135deg, var(--c5-color), #8e44ad);
+}
+.competence-6 .competence-header {
+	background: linear-gradient(135deg, var(--c6-color), #d35400);
+}
 
 /* PREUVES ET RÉALISATIONS */
 .preuves {
@@ -773,11 +832,21 @@ ul {
 }
 
 /* CLASSES UTILITAIRES */
-.text-accent { color: var(--gray-800); }
-.text-success { color: var(--gray-800); }
-.text-warning { color: var(--gray-800); }
-.text-info { color: var(--gray-800); }
-.text-primary { color: var(--gray-800); }
+.text-accent {
+	color: var(--gray-800);
+}
+.text-success {
+	color: var(--gray-800);
+}
+.text-warning {
+	color: var(--gray-800);
+}
+.text-info {
+	color: var(--gray-800);
+}
+.text-primary {
+	color: var(--gray-800);
+}
 
 /* PIED DE PAGE */
 .footer {
