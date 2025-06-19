@@ -40,6 +40,7 @@
 				<span class="tag">👥 Équipe de 5</span>
 				<span class="tag">🎮 Jeu d'aventure</span>
 				<span class="tag">☕ Java</span>
+				<span class="tag">🔧 Architecture MVC</span>
 			</div>
 		</header>
 
@@ -48,167 +49,261 @@
 			<!-- Aperçu du projet -->
 			<section class="section section-box">
 				<h2>Aperçu du Projet</h2>
-				<p>Création progressive d'un jeu d'aventure en Java à travers 5 exercices évolutifs, avec une équipe de 5 développeurs.</p>				<div class="cards-grid">
-					<div class="card card-accent">
-						<h3>🎯 Objectif</h3>
-						<p>Développer un jeu d'aventure complet en Java avec mécaniques avancées : ennemis, caisses, inventaire, obscurité et 5 thèmes graphiques.</p>
-					</div>
-					<div class="card card-success">
-						<h3>👥 Équipe</h3>
-						<p>5 développeurs : Theo, Lucas, Floriane, Nichita, Audric. Développement collaboratif avec Git et répartition des exercices.</p>
-					</div>
-					<div class="card card-warning">
-						<h3>🏆 Résultats</h3>
-						<p>Jeu complet avec 11 niveaux, 5 skins différents, mécaniques avancées et code orienté objet structuré.</p>
-					</div>
-				</div>
-			</section>
-
-			<!-- Évolution progressive -->
-			<section class="section section-box">
-				<h2>Évolution Progressive du Jeu</h2>
-				<p>Le projet s'est développé à travers 5 exercices, chacun ajoutant de nouvelles fonctionnalités au jeu de base.</p>
+				<p><strong>SAE 1.01</strong> est un projet de développement d'un jeu de labyrinthe en Java, réalisé en équipe de 5 personnes. Le projet s'articule autour de 5 exercices progressifs, depuis l'implémentation basique d'un labyrinthe jusqu'à la création d'un jeu complet avec mécaniques avancées, ennemis, et système de niveaux.</p>
 				
 				<div class="cards-grid">
-					<div class="card">
-						<h3 class="text-accent">🔰 Exercice 1 - Base</h3>
-						<ul>
-							<li>Classe Labyrinthe avec grille 2D</li>
-							<li>Lecture de fichier .data</li>
-							<li>Déplacement simple du joueur</li>
-							<li>Affichage console basique</li>
-						</ul>
+					<div class="card bg-subtle-info">
+						<h3>🎯 Objectif Principal</h3>
+						<p>Implémenter progressivement un jeu d'aventure complet en appliquant les principes de la programmation orientée objet et l'architecture MVC.</p>
 					</div>
-					<div class="card">
-						<h3 class="text-success">🎮 Exercice 2 - Interface graphique</h3>
+					<div class="card bg-subtle-success">
+						<h3>🛠️ Technologies</h3>
 						<ul>
-							<li>Interface Swing avec JFrame</li>
-							<li>Affichage graphique du labyrinthe</li>
-							<li>Déplacement avec les flèches</li>
-							<li>Sprites et images pour les éléments</li>
-						</ul>
-					</div>
-					<div class="card">
-						<h3 class="text-warning">📦 Exercice 3 - Mécaniques de jeu</h3>
-						<ul>
-							<li>Système de caisses mobiles</li>
-							<li>Mécaniques de poussée</li>
-							<li>Détection de collisions avancée</li>
-							<li>Objectifs de niveau (toutes les caisses)</li>
-						</ul>
-					</div>
-					<div class="card">
-						<h3 class="text-info">👹 Exercice 4 - Ennemis</h3>
-						<ul>
-							<li>Classe Ennemi avec IA basique</li>
-							<li>Déplacements automatiques</li>
-							<li>Détection de collision joueur-ennemi</li>
-							<li>Système de vie et restart</li>
-						</ul>
-					</div>
-					<div class="card">
-						<h3 class="text-primary">🎨 Exercice 5 - Personnalisation</h3>
-						<ul>
-							<li>5 skins de personnages (Shrek, Link, Astérix...)</li>
-							<li>Mécaniques spéciales (saut, vol, obscurité)</li>
-							<li>Interface de sélection</li>
-							<li>11 niveaux avec difficulté progressive</li>
+							<li>Java (Swing pour l'interface graphique)</li>
+							<li>Architecture MVC</li>
+							<li>Programmation orientée objet</li>
+							<li>Gestion de fichiers</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 
-			<!-- Implémentation technique -->
+			<!-- Exercices réalisés -->
 			<section class="section section-box">
-				<h2>Implémentation Technique</h2>
-				<p>Architecture orientée objet avec Java Swing pour l'interface graphique.</p>
+				<h2>Progression par Exercices</h2>
+				
+				<div class="cards-grid">
+					<div class="card bg-subtle-accent">
+						<h3>📋 Exercice 1 - Labyrinthe de Base</h3>
+						<p><strong>Objectif :</strong> Initialisation et manipulation d'un labyrinthe simple</p>
+						<ul>
+							<li>Lecture de grille depuis un fichier</li>
+							<li>Gestion des déplacements de base</li>
+							<li>Détection de sortie</li>
+							<li>Interface console simple</li>
+						</ul>
+					</div>
+
+					<div class="card bg-subtle-warning">
+						<h3>🎮 Exercice 2 - Architecture MVC</h3>
+						<p><strong>Objectif :</strong> Implémentation du pattern MVC avec interface utilisateur</p>
+						<ul>
+							<li>Séparation Modèle-Vue-Contrôleur</li>
+							<li>Interface console interactive (IhmCui)</li>
+							<li>Gestion des entrées utilisateur</li>
+							<li>Boucle de jeu principale</li>
+						</ul>
+					</div>
+
+					<div class="card bg-subtle-success">
+						<h3>🖼️ Exercice 3 - Interface Graphique</h3>
+						<p><strong>Objectif :</strong> Transition vers une interface graphique avec Java Swing</p>
+						<ul>
+							<li>Interface graphique avec FrameGrille</li>
+							<li>Affichage visuel du labyrinthe</li>
+							<li>Gestion des événements clavier</li>
+							<li>Intégration graphique du modèle</li>
+						</ul>
+					</div>
+
+					<div class="card bg-subtle-info">
+						<h3>🎨 Exercice 4 - Sprites et Visuel</h3>
+						<p><strong>Objectif :</strong> Amélioration visuelle avec sprites et textures</p>
+						<ul>
+							<li>Intégration de sprites (personnages, murs, sol)</li>
+							<li>Gestion des ressources graphiques</li>
+							<li>Amélioration de l'expérience utilisateur</li>
+							<li>Optimisation de l'affichage</li>
+						</ul>
+					</div>
+
+					<div class="card bg-subtle-accent">
+						<h3>🏆 Exercice 5 - Jeu Complet</h3>
+						<p><strong>Objectif :</strong> Développement d'un jeu d'aventure complet</p>
+						<ul>
+							<li><strong>Mécaniques avancées :</strong> Saut, vol, obscurité</li>
+							<li><strong>Système d'ennemis :</strong> Goomba avec IA</li>
+							<li><strong>Objets interactifs :</strong> Caisses, boutons, pièges</li>
+							<li><strong>Système de niveaux :</strong> 11 niveaux progressifs</li>
+							<li><strong>Personnages multiples :</strong> Shrek, Link, Astérix, Indiana, Lim</li>
+							<li><strong>Inventaire et items</strong></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Fonctionnalités Techniques -->
+			<section class="section section-box">
+				<h2>Fonctionnalités Techniques Implémentées</h2>
 				
 				<div class="cards-grid">
 					<div class="card">
-						<h3 class="text-accent">🏗️ Architecture</h3>						<ul>
-							<li><strong>Classe Labyrinthe</strong> : Gestion de la grille et logique de jeu</li>
-							<li><strong>Classe Joueur</strong> : Déplacements et propriétés du personnage</li>
-							<li><strong>Classe Ennemi</strong> : IA et comportements automatiques</li>
-							<li><strong>Classe Interface</strong> : Affichage Swing et interactions</li>
-						</ul>
-					</div>
-					<div class="card">
-						<h3>📁 Gestion des fichiers</h3>
+						<h3>⚙️ Architecture</h3>
 						<ul>
-							<li><strong>Fichiers .data</strong> : Format de niveaux personnalisé</li>
-							<li><strong>Images PNG</strong> : Sprites pour tous les éléments</li>
-							<li><strong>Configuration</strong> : Paramètres de jeu modulaires</li>
-							<li><strong>Sauvegarde</strong> : Progression et préférences</li>
+							<li><strong>Pattern MVC :</strong> Séparation claire des responsabilités</li>
+							<li><strong>POO avancée :</strong> Héritage, encapsulation, polymorphisme</li>
+							<li><strong>Gestion mémoire :</strong> Optimisation des ressources</li>
 						</ul>
 					</div>
+
 					<div class="card">
-						<h3>🎮 Mécaniques de jeu</h3>
+						<h3>🎮 Mécaniques de Jeu</h3>
 						<ul>
-							<li><strong>Détection de collisions</strong> : Algorithmes précis</li>
-							<li><strong>Système de caisses</strong> : Physique simplifiée</li>
-							<li><strong>IA des ennemis</strong> : Pathfinding basique</li>
-							<li><strong>Capacités spéciales</strong> : Saut, vol, vision nocturne</li>
+							<li><strong>Système de collision :</strong> Detection précise</li>
+							<li><strong>Intelligence artificielle :</strong> Ennemis avec comportements</li>
+							<li><strong>Physique simple :</strong> Gravité, saut, vol</li>
+							<li><strong>Interactions :</strong> Objets, portes, mécanismes</li>
 						</ul>
 					</div>
+
+					<div class="card">
+						<h3>💾 Gestion des Données</h3>
+						<ul>
+							<li><strong>Lecture fichiers :</strong> Grilles et configurations</li>
+							<li><strong>Sauvegarde état :</strong> Progression joueur</li>
+							<li><strong>Ressources :</strong> Images, sons, données</li>
+						</ul>
+					</div>
+				</div>
+			</section>			<!-- Captures d'écran -->
+			<section class="section section-box">
+				<h2>Captures d'Écran du Projet</h2>
+				<p><em>📸 Evolution du projet à travers les différentes étapes du développement</em></p>
+				
+				<div class="cards-grid">
+					<div class="card">
+						<h3>🖥️ Interface Console (Exercice 1-2)</h3>
+						<p>Affichage en mode texte avec navigation clavier</p>
+						<img src="../../assets/images/sae101/console-interface.png" alt="Interface console du labyrinthe" style="width: 100%; border-radius: 8px;">
+					</div>
+
+					<div class="card">
+						<h3>🎨 Interface Graphique Basique (Exercice 3)</h3>
+						<p>Première version graphique avec Java Swing</p>
+						<img src="../../assets/images/sae101/gui-basic.png" alt="Interface graphique basique" style="width: 100%; border-radius: 8px;">
+					</div>
+				</div>
+
+				<!-- Jeu final en grand format -->
+				<div class="card" style="margin-top: var(--space-lg); max-width: none;">
+					<h3>🏆 Jeu Final (Exercice 5) - Version Complète</h3>
+					<p>Version finale avec ennemis, mécaniques avancées, système de niveaux et personnages multiples</p>
+					<img src="../../assets/images/sae101/final-game.png" alt="Jeu final complet avec tous les éléments" style="width: 100%; max-width: 800px; margin: 0 auto; display: block; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
 				</div>
 			</section>
 
 			<!-- Compétences développées -->
 			<section class="section section-box">
 				<h2>Compétences Développées</h2>
-				<p>Ce projet m'a permis de développer plusieurs compétences clés du BUT Informatique.</p>				<div class="cards-grid">
+				
+				<div class="cards-grid">
 					<div class="card card-c1">
-						<h3>C1 - Développement d'application</h3>
+						<h3><a href="../competences/competence1.html">🔧 Compétence 1 - Réaliser un développement d'application</a></h3>
 						<ul>
-							<li>Programmation orientée objet en Java</li>
-							<li>Interface graphique avec Swing</li>
-							<li>Architecture modulaire et maintenable</li>
-							<li>Tests et débogage de code complexe</li>
+							<li><strong>Implémentation :</strong> Conception et codage de 5 exercices progressifs</li>
+							<li><strong>Architecture :</strong> Application du pattern MVC</li>
+							<li><strong>Qualité du code :</strong> Respect des bonnes pratiques Java</li>
+							<li><strong>Tests :</strong> Validation à chaque étape du développement</li>
+							<li><strong>Interface utilisateur :</strong> Console puis graphique</li>
 						</ul>
 					</div>
+
 					<div class="card card-c2">
-						<h3>C2 - Optimisation d'applications</h3>
+						<h3><a href="../competences/competence2.html">⚡ Compétence 2 - Optimiser des applications</a></h3>
 						<ul>
-							<li>Optimisation des algorithmes de collision</li>
-							<li>Gestion efficace de la mémoire</li>
-							<li>Performance des animations et affichage</li>
-							<li>Structure de données adaptées</li>
+							<li><strong>Algorithmes :</strong> Optimisation des déplacements et collisions</li>
+							<li><strong>Structures de données :</strong> Tableaux 2D, collections</li>
+							<li><strong>Performance :</strong> Gestion efficace des ressources graphiques</li>
+							<li><strong>Complexité :</strong> Analyse des algorithmes de pathfinding</li>
 						</ul>
-					</div>					<div class="card card-c6">
-						<h3>C6 - Travail en équipe</h3>
+					</div>
+
+					<div class="card card-c5">
+						<h3><a href="../competences/competence5.html">📋 Compétence 5 - Conduire un projet</a></h3>
 						<ul>
-							<li>Développement collaboratif avec Git</li>
-							<li>Répartition des tâches par exercices</li>
-							<li>Intégration de code de plusieurs développeurs</li>
-							<li>Communication et coordination d'équipe</li>
+							<li><strong>Travail en équipe :</strong> Coordination de 5 développeurs</li>
+							<li><strong>Planification :</strong> Découpage en exercices progressifs</li>
+							<li><strong>Gestion des versions :</strong> Intégration du code d'équipe</li>
+							<li><strong>Documentation :</strong> Code commenté et structuré</li>
+						</ul>
+					</div>
+
+					<div class="card card-c6">
+						<h3><a href="../competences/competence6.html">👥 Compétence 6 - Travailler en équipe</a></h3>
+						<ul>
+							<li><strong>Communication :</strong> Coordination équipe de 5 personnes</li>
+							<li><strong>Répartition des tâches :</strong> Attribution des exercices</li>
+							<li><strong>Collaboration :</strong> Intégration des développements individuels</li>
+							<li><strong>Résolution de conflits :</strong> Gestion des versions et merge</li>
 						</ul>
 					</div>
 				</div>
 			</section>
 
-			<!-- Réflexion et apprentissages -->
+			<!-- Points forts et apprentissages -->
 			<section class="section section-box">
-				<h2>Réflexion et Apprentissages</h2>
-				<div class="card bg-subtle-info">
-					<h3 >💡 Ce que j'ai appris</h3>
-					<p >
-						Ce projet m'a permis de découvrir la programmation orientée objet en Java de manière très concrète. 
-						L'approche progressive par exercices était excellente car elle nous a permis de construire petit à petit 
-						nos compétences sans être submergés. J'ai particulièrement apprécié la partie interface graphique avec 
-						Swing, même si c'était parfois complexe à déboguer.
-					</p>
-					<p >
-						Le travail en équipe était un vrai défi, surtout pour gérer les conflits Git et s'assurer que le code 
-						de chacun s'intègre bien. Mais c'était très formateur pour comprendre les enjeux du développement collaboratif.
-					</p>
+				<h2>Points Forts et Apprentissages</h2>
+				
+				<div class="cards-grid">
+					<div class="card bg-subtle-success">
+						<h3>✅ Réussites</h3>
+						<ul>
+							<li><strong>Progression méthodique :</strong> Évolution claire du simple au complexe</li>
+							<li><strong>Architecture solide :</strong> MVC bien implémenté</li>
+							<li><strong>Travail d'équipe efficace :</strong> Bonne coordination sur 5 exercices</li>
+							<li><strong>Fonctionnalités avancées :</strong> IA, physique, système de niveaux</li>
+							<li><strong>Code de qualité :</strong> Commentaires et structure claire</li>
+						</ul>
+					</div>
+
+					<div class="card bg-subtle-warning">
+						<h3>🔄 Défis Rencontrés</h3>
+						<ul>
+							<li><strong>Coordination équipe :</strong> Synchronisation du développement</li>
+							<li><strong>Complexité croissante :</strong> Gestion de la dette technique</li>
+							<li><strong>Performance graphique :</strong> Optimisation des sprites</li>
+							<li><strong>Architecture évolutive :</strong> Adaptation aux nouvelles fonctionnalités</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Évolution et perspectives -->
+			<section class="section section-box">
+				<h2>Évolution du Projet</h2>
+				<p>Ce projet SAE 1.01 démontre une progression claire dans l'apprentissage du développement logiciel :</p>
+				
+				<div class="cards-grid">
+					<div class="card">
+						<h3>📈 Progression Technique</h3>
+						<ul>
+							<li><strong>Étape 1-2 :</strong> Bases algorithmiques et architecture</li>
+							<li><strong>Étape 3 :</strong> Interface graphique et interaction</li>
+							<li><strong>Étape 4 :</strong> Enrichissement visuel et UX</li>
+							<li><strong>Étape 5 :</strong> Jeu complet avec mécaniques avancées</li>
+						</ul>
+					</div>
+
+					<div class="card">
+						<h3>🎯 Compétences Acquises</h3>
+						<ul>
+							<li>Maîtrise de Java et de la POO</li>
+							<li>Architecture logicielle (MVC)</li>
+							<li>Développement d'interfaces graphiques</li>
+							<li>Travail collaboratif en équipe</li>
+							<li>Gestion de projet informatique</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 		</main>
 
 		<!-- Pied de page -->
 		<footer class="footer">
-			<p>&copy; 2025 Lucas Lafosse - Étudiant BUT Informatique</p>
-			<p>IUT Informatique Le Havre - Université Le Havre Normandie</p>
+			<div class="container">
+				<p>&copy; 2025 Lucas Lafosse - Portfolio BUT Informatique</p>
+				<p>SAE 1.01 - Implémentation d'un besoin client | Décembre 2024</p>
+			</div>
 		</footer>
 	</body>
 </html>
