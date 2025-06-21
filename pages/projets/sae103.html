@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SAE 1.03 - Installation d'un poste pour le développement - Portfolio Lucas Lafosse</title>
+		<link rel="stylesheet" href="../../assets/css/style.css" />
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="nav">
+			<div class="nav__container">
+				<a href="../../index.html" class="nav__brand">Portfolio Lucas Lafosse</a>
+				<ul class="nav__links">
+					<li><a href="../../index.html" class="nav__link">Accueil</a></li>
+					<li><a href="../competences/competence1.html" class="nav__link">Compétences</a></li>
+					<li><a href="sae103.html" class="nav__link nav__link--active">Projets</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Fil d'Ariane -->
+		<div class="container">
+			<nav class="breadcrumb">
+				<ol class="breadcrumb__list">
+					<li class="breadcrumb__item"><a href="../../index.html" class="breadcrumb__link">🏠 Accueil</a></li>
+					<li class="breadcrumb__item"><a href="../../index.html#projets" class="breadcrumb__link">Projets</a></li>
+					<li class="breadcrumb__item">SAE 1.03 - Installation d'un poste pour le développement</li>
+				</ol>
+			</nav>
+		</div>
+
+		<!-- En-tête -->
+		<header class="project-header">
+			<div class="project-type">SAE 1.03</div>
+			<h1>Installation d'un poste pour le développement</h1>
+			<p>
+				Configuration complète d'un environnement de développement : installation de VirtualBox, configuration de machines virtuelles Linux,
+				déploiement d'outils de développement et mise en place de services système
+			</p>
+			<div class="project-tags">
+				<span class="tag">📅 Décembre 2024</span>
+				<span class="tag">👥 Équipe de 3</span>
+				<span class="tag">🐧 Linux Debian</span>
+				<span class="tag">⚙️ VirtualBox</span>
+				<span class="tag">🔧 Administration système</span>
+			</div>
+		</header>
+
+		<!-- Contenu principal -->
+		<main class="container">
+			<!-- Aperçu du projet -->
+			<section class="section section-box">
+				<h2>Aperçu du Projet</h2>
+				<p>
+					<strong>SAE 1.03</strong> consiste en l'installation et la configuration d'une machine virtuelle Linux Debian Bullseye à partir
+					d'un fichier image disque (.vdi). Ce projet nous a permis de découvrir la virtualisation, l'administration système Linux et la
+					mise en place d'un environnement de développement professionnel.
+				</p>
+
+				<div class="cards-grid">
+					<div class="card bg-subtle-accent">
+						<h3>🎯 Objectif</h3>
+						<p>
+							Installer et configurer une machine virtuelle Linux complète pour créer un environnement de développement stable et
+							sécurisé, en maîtrisant les outils de virtualisation et les bases de l'administration système.
+						</p>
+					</div>
+					<div class="card bg-subtle-success">
+						<h3>👥 Équipe</h3>
+						<p>
+							Projet réalisé en équipe de 3 : Lucas Lafosse, Paul Gricourt et Bastien Boucher. Collaboration sur l'installation, la
+							configuration et la documentation des procédures.
+						</p>
+					</div>
+					<div class="card bg-subtle-warning">
+						<h3>🏆 Résultats</h3>
+						<p>
+							Machine virtuelle opérationnelle avec système Linux Debian Bullseye, interface graphique, utilisateurs configurés et
+							documentation complète des procédures d'installation.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Étapes d'installation -->
+			<section class="section section-box">
+				<h2>Processus d'Installation Détaillé</h2>
+				<p>Installation méthodique de VirtualBox et configuration de la machine virtuelle Linux Debian Bullseye.</p>
+
+				<div class="cards-grid">
+					<div class="card">
+						<h3 class="text-accent">📦 Phase 1 : Installation VirtualBox</h3>
+						<ul>
+							<li>Téléchargement de l'exécutable VirtualBox</li>
+							<li>Installation avec validation des composants système</li>
+							<li>Configuration des extensions et pilotes</li>
+							<li>Vérification de l'interface d'administration</li>
+							<li>Premier lancement et familiarisation</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-success">⚙️ Phase 2 : Configuration VM</h3>
+						<ul>
+							<li>Création d'une nouvelle machine virtuelle</li>
+							<li>Attribution des ressources (RAM, CPU)</li>
+							<li>Configuration du stockage et disque virtuel</li>
+							<li>Paramétrage réseau et périphériques</li>
+							<li>Optimisation des performances</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-warning">🐧 Phase 3 : Installation Debian</h3>
+						<ul>
+							<li>Import du fichier disque virtuel (.vdi)</li>
+							<li>Configuration du disque dur virtuel</li>
+							<li>Premier démarrage de la machine</li>
+							<li>Connexion avec identifiants par défaut</li>
+							<li>Exploration de l'environnement système</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-info">🔧 Phase 4 : Configuration système</h3>
+						<ul>
+							<li>Navigation dans l'arborescence Linux</li>
+							<li>Découverte des répertoires système</li>
+							<li>Commandes de base (ls, pwd, cd)</li>
+							<li>Analyse de la structure FHS</li>
+							<li>Documentation des configurations</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Démonstration visuelle -->
+			<section class="section section-box">
+				<h2>Démonstration Visuelle du Processus</h2>
+				<p>Captures d'écran détaillées du processus d'installation et configuration de la machine virtuelle Linux.</p>
+				<!-- Screenshot 1: Installation VirtualBox -->
+				<div class="card" style="margin-bottom: var(--space-lg); max-width: none">
+					<h3>📦 Installation de VirtualBox</h3>
+					<p>
+						Interface de configuration VirtualBox montrant la création d'une nouvelle VM avec
+						les paramètres suivants :
+					</p>
+					<ul>
+						<li>Fenêtre de création de VM avec nom "VM_Linux_Debian Bullseye"</li>
+						<li>Sélection du type "Linux" et version "Debian 11 bullseye (64 bits)"</li>
+						<li>Configuration des ressources (12 Go RAM, 6 cœurs CPU) avec barres indicatrices</li>
+					</ul>
+					<div style="text-align: center; margin: var(--space-md) 0">
+						<img src="../../assets/images/sae103/virtualbox-config.png" alt="Configuration VirtualBox" style="width: 100%; max-width: 800px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+					</div>
+				</div>
+
+				<!-- Screenshot 2: Système Linux -->
+				<div class="card" style="margin-bottom: var(--space-lg); max-width: none">
+					<h3>🐧 Terminal Linux et arborescence système</h3>
+					<p>Terminal Linux Debian montrant l'exploration de l'arborescence système :</p>
+					<ul>
+						<li>Connexion réussie avec utilisateur "debian"</li>
+					</ul>
+					<div style="text-align: center; margin: var(--space-md) 0">
+						<img src="../../assets/images/sae103/linux-terminal.png" alt="Terminal Linux" style="width: 100%; max-width: 900px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+					</div>
+				</div>
+
+				<!-- Screenshot 3: Applications installées -->
+				<div class="card" style="margin-bottom: var(--space-lg); max-width: none">
+					<h3>💻 Environnement de développement complet</h3>
+					<p>Bureau Linux :</p>
+					<ul>
+					</ul>
+					<div style="text-align: center; margin: var(--space-md) 0">
+						<img src="../../assets/images/sae103/desktop-applications.png" alt="Applications installées" style="width: 100%; max-width: 850px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+					</div>
+				</div>
+			</section>
+
+			<!-- Configuration technique -->
+			<section class="section section-box">
+				<h2>Configuration Technique Réalisée</h2>
+				<p>Détails des paramètres et configurations appliqués à la machine virtuelle.</p>
+
+				<div class="cards-grid">
+					<div class="card">
+						<h3>💻 Spécifications Machine</h3>
+						<ul>
+							<li><strong>OS :</strong> Linux Debian 11 Bullseye (64-bit)</li>
+							<li><strong>Virtualisation :</strong> Oracle VM VirtualBox 7.0.10</li>
+							<li><strong>RAM :</strong> 12 Go alloués (sur 32 Go disponibles)</li>
+							<li><strong>CPU :</strong> 6 cœurs alloués (sur 16 disponibles)</li>
+							<li><strong>Stockage :</strong> Disque dur virtuel .vdi</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>🔑 Authentification</h3>
+						<ul>
+							<li><strong>Utilisateur :</strong> debian</li>
+							<li><strong>Mot de passe :</strong> reverse</li>
+							<li><strong>Clavier :</strong> Configuration QWERTY (attention saisie)</li>
+							<li><strong>Permissions :</strong> Utilisateur standard</li>
+							<li><strong>Shell :</strong> Bash par défaut</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>📁 Arborescence Système</h3>
+						<ul>
+							<li><strong>/home :</strong> 2 dossiers, 3 fichiers</li>
+							<li><strong>/root :</strong> Répertoire administrateur</li>
+							<li><strong>/etc :</strong> Fichiers de configuration</li>
+							<li><strong>/var :</strong> Données variables et logs</li>
+							<li><strong>/usr :</strong> Programmes utilisateur</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>🛠️ Outils et Commandes</h3>
+						<ul>
+							<li><strong>ls -a :</strong> Listage complet des fichiers</li>
+							<li><strong>pwd :</strong> Affichage répertoire courant</li>
+							<li><strong>cd :</strong> Navigation dans l'arborescence</li>
+							<li><strong>Exploration :</strong> Répertoires système et utilisateur</li>
+							<li><strong>Documentation :</strong> Apprentissage structure FHS</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Arborescence Linux -->
+			<section class="section section-box">
+				<h2>Exploration de l'Arborescence Linux (FHS)</h2>
+				<p>Découverte et analyse de la structure standard des répertoires Linux (Filesystem Hierarchy Standard).</p>
+
+				<div class="cards-grid">
+					<div class="card">
+						<h3 class="text-accent">🗂️ Répertoires Système</h3>
+						<ul>
+							<li><strong>/</strong> : Racine du système de fichiers</li>
+							<li><strong>/boot</strong> : Fichiers de démarrage et noyau</li>
+							<li><strong>/etc</strong> : Configuration des services</li>
+							<li><strong>/lib</strong> : Bibliothèques partagées</li>
+							<li><strong>/sbin</strong> : Exécutables d'administration</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-success">👤 Répertoires Utilisateur</h3>
+						<ul>
+							<li><strong>/home</strong> : Répertoires personnels</li>
+							<li><strong>/root</strong> : Répertoire du super-utilisateur</li>
+							<li><strong>/usr</strong> : Programmes et données utilisateur</li>
+							<li><strong>/tmp</strong> : Fichiers temporaires</li>
+							<li><strong>/var</strong> : Données variables et logs</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-warning">🔧 Répertoires Spéciaux</h3>
+						<ul>
+							<li><strong>/dev</strong> : Fichiers de périphériques</li>
+							<li><strong>/proc</strong> : Système de fichiers virtuel</li>
+							<li><strong>/sys</strong> : Informations matériel</li>
+							<li><strong>/media</strong> : Points de montage automatiques</li>
+							<li><strong>/mnt</strong> : Montages temporaires</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-info">📊 Analyse Réalisée</h3>
+						<ul>
+							<li><strong>Contenu /home :</strong> 2 dossiers + 3 fichiers</li>
+							<li><strong>Permissions :</strong> Droits d'accès analysés</li>
+							<li><strong>Navigation :</strong> Commandes de base maîtrisées</li>
+							<li><strong>Documentation :</strong> Rôle de chaque répertoire</li>
+							<li><strong>Standards :</strong> Respect des conventions FHS</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Technologies et outils -->
+			<section class="section section-box">
+				<h2>Technologies et Outils Utilisés</h2>
+				<p>Stack complète des technologies de virtualisation et administration système.</p>
+
+				<div class="cards-grid">
+					<div class="card">
+						<h3>💻 Virtualisation</h3>
+						<div style="margin-bottom: var(--space-sm)">
+							<span class="tag" style="margin: 2px">VirtualBox 7.0.10</span>
+							<span class="tag" style="margin: 2px">Hyperviseur Type 2</span>
+							<span class="tag" style="margin: 2px">x86_64</span>
+							<span class="tag" style="margin: 2px">Multi-plateforme</span>
+						</div>
+						<ul>
+							<li>Oracle VM VirtualBox comme hyperviseur</li>
+							<li>Gestion des machines virtuelles</li>
+							<li>Configuration des ressources matérielles</li>
+							<li>Interface d'administration graphique</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>🐧 Système d'Exploitation</h3>
+						<div style="margin-bottom: var(--space-sm)">
+							<span class="tag" style="margin: 2px">Debian 11</span>
+							<span class="tag" style="margin: 2px">Bullseye</span>
+							<span class="tag" style="margin: 2px">Linux 64-bit</span>
+							<span class="tag" style="margin: 2px">Open Source</span>
+						</div>
+						<ul>
+							<li>Distribution Linux Debian stable</li>
+							<li>Environnement de développement complet</li>
+							<li>Shell Bash et outils système</li>
+							<li>Architecture de fichiers standard (FHS)</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>⚙️ Administration</h3>
+						<div style="margin-bottom: var(--space-sm)">
+							<span class="tag" style="margin: 2px">CLI Linux</span>
+							<span class="tag" style="margin: 2px">Bash Shell</span>
+							<span class="tag" style="margin: 2px">Système de fichiers</span>
+							<span class="tag" style="margin: 2px">Permissions</span>
+						</div>
+						<ul>
+							<li>Commandes de base du système</li>
+							<li>Navigation dans l'arborescence</li>
+							<li>Gestion des utilisateurs et permissions</li>
+							<li>Exploration de la structure système</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3>📚 Documentation</h3>
+						<div style="margin-bottom: var(--space-sm)">
+							<span class="tag" style="margin: 2px">Manuel utilisateur</span>
+							<span class="tag" style="margin: 2px">Screenshots</span>
+							<span class="tag" style="margin: 2px">Procédures</span>
+							<span class="tag" style="margin: 2px">Wiki format</span>
+						</div>
+						<ul>
+							<li>Documentation détaillée des procédures</li>
+							<li>Captures d'écran à chaque étape</li>
+							<li>Guide d'installation complet</li>
+							<li>Analyse des configurations réalisées</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Apprentissages et défis -->
+			<section class="section section-box">
+				<h2>Apprentissages et Défis Techniques</h2>
+				<p>Les connaissances acquises et les difficultés surmontées pendant ce projet de virtualisation.</p>
+
+				<div class="cards-grid">
+					<div class="card">
+						<h3 class="text-accent">🎓 Compétences Acquises</h3>
+						<ul>
+							<li><strong>Virtualisation :</strong> Maîtrise de VirtualBox et concepts VM</li>
+							<li><strong>Linux :</strong> Navigation et commandes de base</li>
+							<li><strong>Administration :</strong> Structure système et arborescence</li>
+							<li><strong>Documentation :</strong> Rédaction de procédures techniques</li>
+							<li><strong>Troubleshooting :</strong> Résolution de problèmes d'installation</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-warning">⚠️ Défis Rencontrés</h3>
+						<ul>
+							<li><strong>Allocation mémoire :</strong> Équilibrage ressources hôte/VM</li>
+							<li><strong>Configuration clavier :</strong> Adaptation QWERTY/AZERTY</li>
+							<li><strong>Permissions :</strong> Compréhension droits utilisateur</li>
+							<li><strong>Arborescence :</strong> Apprentissage structure Linux</li>
+							<li><strong>Compatibilité :</strong> Gestion des pilotes et extensions</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-success">✅ Solutions Apportées</h3>
+						<ul>
+							<li><strong>Ressources :</strong> Calcul optimal RAM/CPU selon machine hôte</li>
+							<li><strong>Documentation :</strong> Procédures détaillées pas-à-pas</li>
+							<li><strong>Validation :</strong> Tests de fonctionnement complets</li>
+							<li><strong>Troubleshooting :</strong> Guide de résolution d'erreurs</li>
+							<li><strong>Backup :</strong> Sauvegarde des configurations validées</li>
+						</ul>
+					</div>
+					<div class="card">
+						<h3 class="text-info">🚀 Perspectives</h3>
+						<ul>
+							<li><strong>Environnement dev :</strong> Base pour projets futurs</li>
+							<li><strong>Services réseau :</strong> Configuration serveurs</li>
+							<li><strong>Sécurité :</strong> Isolation et environnements de test</li>
+							<li><strong>Automatisation :</strong> Scripts de déploiement</li>
+							<li><strong>Conteneurisation :</strong> Évolution vers Docker</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Compétences développées -->
+			<section class="section section-box">
+				<h2>Compétences Développées</h2>
+				<p>Ce projet m'a permis de développer plusieurs compétences clés du BUT Informatique.</p>
+
+				<div class="cards-grid">
+					<div class="card card-c3">
+						<h3><a href="../competences/competence3.html">C3 - Administration Systèmes et Réseaux</a></h3>
+						<ul>
+							<li>Installation et configuration de VirtualBox</li>
+							<li>Création et paramétrage de machines virtuelles</li>
+							<li>Administration système Linux (Debian)</li>
+							<li>Gestion des ressources et performances</li>
+							<li>Documentation des procédures d'installation</li>
+						</ul>
+					</div>
+					<div class="card card-c6">
+						<h3><a href="../competences/competence6.html">C6 - Travail en Équipe</a></h3>
+						<ul>
+							<li>Collaboration en équipe de 3 personnes</li>
+							<li>Répartition des tâches d'installation et test</li>
+							<li>Documentation collaborative et partagée</li>
+							<li>Résolution collective de problèmes techniques</li>
+							<li>Communication et partage de connaissances</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Réflexion et apprentissages -->
+			<section class="section section-box">
+				<h2>Réflexion et Apprentissages</h2>
+				<div class="card bg-subtle-info">
+					<h3>💡 Ce que j'ai appris</h3>
+					<p>
+						Cette SAE m'a fait découvrir le monde de la virtualisation et de l'administration système Linux. Installer et configurer une
+						machine virtuelle m'a appris l'importance de la planification des ressources et de la documentation des procédures.
+					</p>
+					<p>
+						L'exploration de l'arborescence Linux m'a permis de comprendre la logique d'organisation d'un système Unix. Découvrir le rôle
+						de chaque répertoire (/etc, /var, /usr, etc.) et apprendre les commandes de base m'a donné une base solide pour
+						l'administration système.
+					</p>
+					<p>
+						Le travail en équipe sur ce projet technique m'a appris l'importance de la communication et du partage de connaissances.
+						Documenter chaque étape avec des captures d'écran s'est révélé essentiel pour la reproductibilité et le partage avec mes
+						coéquipiers.
+					</p>
+					<p>
+						Cette expérience m'a sensibilisé aux enjeux de la virtualisation : isolation, sécurité, optimisation des ressources. C'est une
+						base solide pour comprendre les infrastructures modernes et les technologies comme Docker ou les clouds computing.
+					</p>
+					<p>
+						Au niveau personnel, ce projet m'a donné confiance pour aborder l'administration système et m'a ouvert les portes vers
+						l'exploration d'autres distributions Linux et outils d'infrastructure.
+					</p>
+				</div>
+			</section>
+		</main>
+
+		<!-- Pied de page -->
+		<footer class="footer">
+			<p>&copy; 2025 Lucas Lafosse - Étudiant BUT Informatique</p>
+			<p>SAE 1.03 - Équipe : Lucas Lafosse, Paul Gricourt, Bastien Boucher</p>
+		</footer>
+	</body>
+</html>
