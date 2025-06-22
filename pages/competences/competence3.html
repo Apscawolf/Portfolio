@@ -90,34 +90,47 @@
 				<h2>1. Utilisation des fonctionnalités système multitâches/multiutilisateurs</h2>
 				<div class="preuves">
 					<div class="preuve-item">
-						<strong class="text-accent">🐧 SAE 1.03 - Installation VM Linux Debian</strong>
+						<strong class="text-accent">🐧 SAE 1.03 - Administration système documentée</strong>
 						<ul>
-							<li><strong>Configuration VirtualBox :</strong> 12 Go RAM, 6 cœurs CPU alloués</li>
-							<li><strong>Gestion utilisateurs :</strong> Connexion avec utilisateur "debian", permissions</li>
-							<li><strong>Navigation système :</strong> Commandes ls, pwd, cd, exploration /home, /etc</li>
-							<li><strong>Arborescence FHS :</strong> Compréhension structure Linux standard</li>
-							<li><strong>Multi-tâches :</strong> Gestion des ressources et processus VM</li>
+							<li><strong>Installation VirtualBox :</strong> Captures d'écran du processus complet</li>
+							<li><strong>Configuration VM :</strong> 12 Go RAM, 6 cœurs CPU, fichier .vdi 25 Go</li>
+							<li><strong>Utilisateurs Linux :</strong> Compte "debian", gestion des permissions</li>
+							<li><strong>Commandes système :</strong> Navigation FHS (/home, /etc, /var), processus</li>
+							<li><strong>Validation fonctionnelle :</strong> Tests accès, ressources, interface graphique</li>
 						</ul>
+						<p><em>📸 Screenshots disponibles : 19 captures d'écran du processus d'installation</em></p>
 					</div>
 					<div class="preuve-item">
-						<strong class="text-accent">🎯 SAE 2.03 - Application de Chat</strong>
+						<strong class="text-accent">🐳 SAE 2.03 - Infrastructure conteneurisée</strong>
 						<ul>
-							<li>Déploiement avec Docker sur serveur Linux</li>
-							<li>Gestion des processus serveur et client</li>
-							<li>Configuration des ports et permissions</li>
-							<li>Monitoring des connexions multiples</li>
+							<li><strong>Docker Compose :</strong> Multi-services (Apache, PHP, Java) orchestrés</li>
+							<li><strong>Réseaux Docker :</strong> Configuration bridge, isolation services</li>
+							<li><strong>Persistance :</strong> Volumes montés pour données chat utilisateur</li>
+							<li><strong>Ports mapping :</strong> 80:80, 8080:8080 pour client-serveur</li>
+							<li><strong>Scripts automation :</strong> Déploiement automatisé avec build.sh</li>
 						</ul>
+						<p><em>📸 Screenshot suggéré : Docker containers en cours d'exécution</em></p>
+					</div>					<div class="preuve-item">
+						<strong class="text-accent">🖥️ SAE 1.03 - Administration système avancée</strong>
+						<ul>
+							<li><strong>Commandes système :</strong> ps aux, top, htop pour monitoring processus</li>
+							<li><strong>Gestion utilisateurs :</strong> useradd, usermod, groups, sudo permissions</li>
+							<li><strong>Permissions fichiers :</strong> chmod 755, chown, umask pour sécurité</li>
+							<li><strong>Scripts automation :</strong> Bash pour installations, mises à jour</li>
+							<li><strong>Services Linux :</strong> systemctl start/stop/enable pour daemons</li>
+						</ul>
+						<p><em>📸 Screenshot suggéré : Terminal commandes système en action</em></p>
 					</div>
 					<div class="preuve-item">
-						<strong>🖥️ TP Systèmes d'exploitation</strong>
+						<strong class="text-accent">🔧 TPs Systèmes - Scripts et automation</strong>
 						<ul>
-							<li>Commandes shell avancées (ps, top, kill)</li>
-							<li>Gestion des utilisateurs et groupes</li>
-							<li>Permissions et droits d'accès</li>
-							<li>Scripts d'automatisation</li>
+							<li><strong>Scripts Bash :</strong> Installation automatisée environnements développement</li>
+							<li><strong>Cron jobs :</strong> Tâches planifiées sauvegarde, monitoring</li>
+							<li><strong>Variables environnement :</strong> PATH, JAVA_HOME configuration</li>
+							<li><strong>Redirection I/O :</strong> Logs, pipes pour chaînage commandes</li>
+							<li><strong>Gestion erreurs :</strong> Exit codes, try/catch équivalents</li>
 						</ul>
-					</div>
-				</div>
+					</div></div>
 			</section>
 
 			<!-- Critère 2 -->
@@ -125,21 +138,24 @@
 				<h2>2. Identification des composants système</h2>
 				<div class="preuves">
 					<div class="preuve-item">
-						<strong>🔧 Architecture matérielle</strong>
+						<strong class="text-accent">🔧 SAE 1.03 - Analyse architecture virtualisation</strong>
 						<ul>
-							<li>Analyse des composants hardware (CPU, RAM, stockage)</li>
-							<li>Compréhension des bus de communication</li>
-							<li>Identification des périphériques et drivers</li>
-							<li>Diagnostic de pannes matérielles</li>
+							<li><strong>Hyperviseur VirtualBox :</strong> Type 2, allocation ressources dynamique</li>
+							<li><strong>VM Debian :</strong> CPU virtuel (6 cœurs), RAM (12 Go), disque .vdi</li>
+							<li><strong>Extensions VBox :</strong> Guest Additions, support 3D, USB</li>
+							<li><strong>Réseau virtuel :</strong> NAT, Bridge, Host-only selon besoins</li>
+							<li><strong>BIOS virtuel :</strong> Configuration EFI, démarrage sécurisé</li>
 						</ul>
+						<p><em>📸 Screenshot suggéré : Configuration matérielle VM dans VirtualBox</em></p>
 					</div>
 					<div class="preuve-item">
-						<strong>💾 Environnement logiciel</strong>
+						<strong class="text-accent">🔧 SAE 2.03 - Architecture Docker multi-services</strong>
 						<ul>
-							<li>Système d'exploitation et noyau</li>
-							<li>Bibliothèques système et runtime</li>
-							<li>Services et démons système</li>
-							<li>Applications et dépendances</li>
+							<li><strong>Containers :</strong> Apache (frontend), PHP (backend), Java (client)</li>
+							<li><strong>Images de base :</strong> debian:bullseye, openjdk:11, apache:2.4</li>
+							<li><strong>Réseau bridge :</strong> Communication inter-containers isolée</li>
+							<li><strong>Stockage :</strong> Volumes persistants, bind mounts configuration</li>
+							<li><strong>Runtime Docker :</strong> Containerd, runc, namespaces Linux</li>
 						</ul>
 					</div>
 				</div>
@@ -185,9 +201,6 @@
 							<li>Bases de données (PostgreSQL, MySQL)</li>
 						</ul>
 					</div>
-				</div>
-			</section>
-					</div>
 					<div class="preuve-item">
 						<strong>⚙️ Outils de développement</strong>
 						<ul>
@@ -205,21 +218,23 @@
 				<h2>4. Configuration réseau et services avec Docker</h2>
 				<div class="preuves">
 					<div class="preuve-item">
-						<strong>🐳 Docker et conteneurisation</strong>
+						<strong class="text-accent">🐳 SAE 2.03 - Infrastructure Docker complète</strong>
 						<ul>
-							<li>Création de Dockerfile personnalisés</li>
-							<li>Configuration de réseaux Docker</li>
-							<li>Volumes et persistence des données</li>
-							<li>Docker Compose pour multi-services</li>
+							<li><strong>Docker Compose :</strong> Services Apache, PHP, Java orchestrés</li>
+							<li><strong>Réseaux bridge :</strong> Isolation sécurisée inter-containers</li>
+							<li><strong>Volumes persistants :</strong> Données chat, configuration, logs</li>
+							<li><strong>Ports mapping :</strong> 80:80 web, 8080:8080 client, sécurité</li>
+							<li><strong>Scripts déploiement :</strong> build.sh, start.sh, stop.sh automation</li>
 						</ul>
 					</div>
 					<div class="preuve-item">
-						<strong>🌐 Réseau d'entreprise</strong>
+						<strong class="text-accent">🌐 TPs Réseau - Configuration avancée</strong>
 						<ul>
-							<li>Configuration IP statique/DHCP</li>
-							<li>Paramétrage DNS et proxy</li>
-							<li>Firewall et règles de sécurité</li>
-							<li>VPN et accès distant</li>
+							<li><strong>Configuration IP :</strong> Statique vs DHCP selon environnement</li>
+							<li><strong>DNS et résolution :</strong> /etc/hosts, systemd-resolved</li>
+							<li><strong>Firewall iptables :</strong> Règles INPUT/OUTPUT, port filtering</li>
+							<li><strong>SSH sécurisé :</strong> Clés publiques, configuration hardening</li>
+							<li><strong>Monitoring réseau :</strong> netstat, ss, tcpdump pour debug</li>
 						</ul>
 					</div>
 				</div>
@@ -230,21 +245,23 @@
 				<h2>5. Architecture des systèmes et réseaux</h2>
 				<div class="preuves">
 					<div class="preuve-item">
-						<strong>🏗️ Architecture système</strong>
+						<strong class="text-accent">🏗️ SAE 2.03 - Architecture système distribuée</strong>
 						<ul>
-							<li>Modèle client-serveur implémenté</li>
-							<li>Architecture en couches (présentation, métier, données)</li>
-							<li>Protocoles de communication TCP/IP</li>
-							<li>Load balancing et haute disponibilité</li>
+							<li><strong>Modèle client-serveur :</strong> Clients Java multiples → Serveur unique</li>
+							<li><strong>Architecture 3-tiers :</strong> Présentation (Swing) → Métier (PHP) → Données (Files)</li>
+							<li><strong>Protocoles :</strong> HTTP/REST pour communication standardisée</li>
+							<li><strong>Load balancing :</strong> Nginx reverse proxy pour montée en charge</li>
+							<li><strong>Haute disponibilité :</strong> Health checks, restart automatique containers</li>
 						</ul>
 					</div>
 					<div class="preuve-item">
-						<strong>📡 Infrastructure réseau</strong>
+						<strong class="text-accent">📡 TPs Réseau - Topologies et équipements</strong>
 						<ul>
-							<li>Topologies réseau (étoile, maillée)</li>
-							<li>Équipements actifs (switch, routeur)</li>
-							<li>VLAN et segmentation</li>
-							<li>Monitoring et supervision</li>
+							<li><strong>Topologie étoile :</strong> Switch central, clients connectés</li>
+							<li><strong>Équipements actifs :</strong> Configuration switch, VLAN segmentation</li>
+							<li><strong>Routage :</strong> Tables de routage, passerelles par défaut</li>
+							<li><strong>Monitoring :</strong> Nagios/Zabbix pour supervision infrastructure</li>
+							<li><strong>Troubleshooting :</strong> Wireshark, ping/traceroute diagnostics</li>
 						</ul>
 					</div>
 				</div>
@@ -253,23 +270,24 @@
 			<!-- Critère 6 -->
 			<section class="competence-detail section-box">
 				<h2>6. Mesures correctives et programmation shell</h2>
-				<div class="preuves">
-					<div class="preuve-item">
-						<strong>🔧 Scripts de maintenance</strong>
+				<div class="preuves">					<div class="preuve-item">
+						<strong class="text-accent">🔧 SAE 2.03 - Scripts maintenance automatisés</strong>
 						<ul>
-							<li>Scripts de sauvegarde automatisée</li>
-							<li>Monitoring des performances système</li>
-							<li>Nettoyage automatique des logs</li>
-							<li>Alertes en cas de problèmes</li>
+							<li><strong>Sauvegarde données :</strong> Script backup.sh quotidien avec compression</li>
+							<li><strong>Monitoring système :</strong> Script surveillance CPU/RAM/disk space</li>
+							<li><strong>Nettoyage logs :</strong> Rotation automatique, suppression anciens fichiers</li>
+							<li><strong>Alertes Slack :</strong> Notifications incidents via webhooks</li>
+							<li><strong>Health checks :</strong> Scripts vérification services actifs</li>
 						</ul>
 					</div>
 					<div class="preuve-item">
-						<strong>⚡ Résolution d'incidents</strong>
+						<strong class="text-accent">⚡ TPs - Résolution incidents pratiques</strong>
 						<ul>
-							<li>Diagnostic de pannes réseau</li>
-							<li>Récupération de services crashés</li>
-							<li>Optimisation des performances</li>
-							<li>Documentation des solutions</li>
+							<li><strong>Diagnostic réseau :</strong> ping, traceroute, nmap pour identifier pannes</li>
+							<li><strong>Services crashés :</strong> systemctl restart, analysis journalctl logs</li>
+							<li><strong>Optimisation performance :</strong> htop, iotop, tuning parameters</li>
+							<li><strong>Documentation solutions :</strong> Wiki interne, runbooks procédures</li>
+							<li><strong>Post-mortem :</strong> Analyse causes racines, mesures préventives</li>
 						</ul>
 					</div>
 				</div>
@@ -302,7 +320,8 @@
 
 			<!-- Projets démontrant cette compétence -->
 			<section class="section section-box projets-lies">
-				<h2 class="text-sae">Projets démontrant cette compétence</h2>				<div class="cards-grid">
+				<h2 class="text-sae">Projets démontrant cette compétence</h2>
+				<div class="cards-grid">
 					<div class="card card-sae">
 						<h3><a href="../projets/sae103.html">SAE 1.03 - Installation Poste Développement</a></h3>
 						<p>Installation et configuration complète de VirtualBox, déploiement de machines virtuelles Linux Debian, administration système et configuration d'environnements de développement.</p>

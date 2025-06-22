@@ -100,21 +100,26 @@
 						</ul>
 					</div>
 					<div class="preuve-item">
-						<strong class="text-accent">🎮 SAE 1.01 - Jeu de Labyrinthe</strong>
+						<strong class="text-accent">🎮 SAE 1.01 - Jeu de Labyrinthe (Exercices progressifs)</strong>
 						<ul>
-							<li>Java → Programmation orientée objet</li>
-							<li>Swing → Interface graphique évolutive</li>
-							<li>Fichiers .data → Niveaux de jeu</li>
-							<li>Images PNG → Sprites et thèmes</li>
+							<li><strong>Architecture MVC complète :</strong> Classes Labyrinthe (Modèle), FrameGrille (Vue), Controleur</li>
+							<li><strong>Interface Swing évolutive :</strong> Console → Graphique → Sprites (5 exercices)</li>
+							<li><strong>Système de niveaux :</strong> 11 niveaux progressifs, 5 personnages (Shrek, Link, Astérix)</li>
+							<li><strong>Mécaniques avancées :</strong> Saut, vol, obscurité, IA ennemis (Goomba)</li>
+							<li><strong>Gestion ressources :</strong> Lecture fichiers .data, sprites PNG, sauvegarde états</li>
 						</ul>
+						<p><em>📸 Screenshots suggérés : Évolution console → graphique → jeu complet</em></p>
 					</div>
 					<div class="preuve-item">
-						<strong class="text-info">📝 Justification choix techniques</strong>
+						<strong class="text-accent">📋 SAE 2.01/2.02/2.05 - Application Graphe MPM</strong>
 						<ul>
-							<li>Java = Orienté objet + Cross-platform</li>
-							<li>Swing = Natif + Gestion événements</li>
-							<li>Architecture MVC = Maintenabilité</li>
+							<li><strong>Interface Swing complexe :</strong> Graphiques, tableaux, interactions utilisateur</li>
+							<li><strong>Algorithmes de graphes :</strong> Forward/Backward Pass, calcul chemins critiques</li>
+							<li><strong>Architecture MVC avancée :</strong> GrapheMPM, FrameMPM, Contrôleur séparés</li>
+							<li><strong>Import/Export données :</strong> Fichiers .data, sauvegarde projets MPM</li>
+							<li><strong>Scripts automation :</strong> Compilation multi-plateforme automatisée</li>
 						</ul>
+						<p><em>📸 Screenshot suggéré : Interface graphique avec graphe MPM calculé</em></p>
 					</div>
 				</div>
 			</section>
@@ -191,20 +196,26 @@
 						</ul>
 					</div>
 					<div class="preuve-item">
-						<strong>🏗️ Architecture modulaire</strong>
+						<strong class="text-accent">🏗️ SAE 2.03 - Architecture modulaire détaillée</strong>
 						<ul>
-							<li>Séparation client/serveur</li>
-							<li>Classes distinctes par fonctionnalité</li>
-							<li>Méthodes courtes et spécialisées</li>
+							<li><strong>Séparation client/serveur :</strong> Client.java (interface Swing) + Server.php (API REST)</li>
+							<li><strong>Classes spécialisées :</strong> User.java, Message.java, Connection.java</li>
+							<li><strong>Méthodes courtes :</strong> sendMessage(), authenticate(), refreshUsers() < 20 lignes</li>
+							<li><strong>Interfaces définies :</strong> Contrats API clairs (POST /login, GET /messages)</li>
+							<li><strong>Principe responsabilité unique :</strong> Une classe = une fonctionnalité</li>
 						</ul>
+						<p><em>📸 Screenshot suggéré : Diagramme architecture avec classes</em></p>
 					</div>
 					<div class="preuve-item">
-						<strong>📝 Documentation</strong>
+						<strong class="text-accent">📝 SAE 1.01 - Documentation technique qualité</strong>
 						<ul>
-							<li>Commentaires dans le code</li>
-							<li>README détaillé</li>
-							<li>Instructions d'installation</li>
+							<li><strong>Javadoc complète :</strong> @param, @return pour 50+ méthodes publiques</li>
+							<li><strong>README.md structuré :</strong> Installation, utilisation, architecture</li>
+							<li><strong>Commentaires explicatifs :</strong> Algorithmes complexes (collision, IA)</li>
+							<li><strong>Guide utilisateur :</strong> Touches clavier, objectifs par niveau</li>
+							<li><strong>Documentation technique :</strong> Format fichiers .data, sprites</li>
 						</ul>
+						<p><em>📸 Screenshot suggéré : Javadoc générée avec méthodes documentées</em></p>
 					</div>
 				</div>
 			</section>
@@ -225,12 +236,26 @@
 						</ul>
 					</div>
 					<div class="preuve-item">
-						<strong>🔍 Validation BD</strong>
+						<strong class="text-accent">🧪 SAE 1.01 - Tests et validation fonctionnelle</strong>
 						<ul>
-							<li>Requêtes SQL testées</li>
-							<li>Cohérence des données vérifiée</li>
-							<li>Performances mesurées</li>
+							<li><strong>Tests collision :</strong> Murs, caisses, sorties validés sur 11 niveaux</li>
+							<li><strong>Tests interface :</strong> Clavier (ZQSD, flèches), souris, redimensionnement</li>
+							<li><strong>Tests gameplay :</strong> Saut, vol, obscurité, IA ennemis (Goomba)</li>
+							<li><strong>Tests ressources :</strong> Chargement sprites, fichiers .data, sons</li>
+							<li><strong>Validation spécifications :</strong> 5 personnages ✓, 11 niveaux ✓, progression ✓</li>
 						</ul>
+						<p><em>📸 Screenshot suggéré : Tests en cours sur différents niveaux</em></p>
+					</div>
+					<div class="preuve-item">
+						<strong class="text-accent">🔍 SAE 2.04 - Validation base de données</strong>
+						<ul>
+							<li><strong>Tests contraintes :</strong> Clés étrangères, domaines, NOT NULL</li>
+							<li><strong>Jeux de données :</strong> 50+ enregistrements cohérents par table</li>
+							<li><strong>Requêtes validées :</strong> 15 requêtes testées avec résultats attendus</li>
+							<li><strong>Performance mesurée :</strong> EXPLAIN ANALYZE sur requêtes complexes</li>
+							<li><strong>Cohérence vérifiée :</strong> Dates logiques, références valides</li>
+						</ul>
+						<p><em>📸 Screenshot suggéré : EXPLAIN ANALYZE d'une requête optimisée</em></p>
 					</div>
 				</div>
 			</section>
@@ -251,12 +276,27 @@
 						</ul>
 					</div>
 					<div class="preuve-item">
-						<strong>💻 Ergonomie</strong>
+						<strong class="text-accent">💻 SAE 1.01 - Interface Swing ergonomique</strong>
 						<ul>
-							<li>Navigation intuitive</li>
-							<li>Feedback utilisateur</li>
-							<li>Responsive design (web)</li>
+							<li><strong>Layout adaptatif :</strong> BorderLayout principal, GridLayout grille de jeu</li>
+							<li><strong>Composants standards :</strong> JFrame, JPanel, JLabel pour sprites</li>
+							<li><strong>Événements optimisés :</strong> KeyListener temps réel, ActionListener menus</li>
+							<li><strong>Accessibilité :</strong> Raccourcis ZQSD + flèches directionnelles</li>
+							<li><strong>Feedback visuel :</strong> Animations déplacement, changement sprites</li>
+							<li><strong>Ergonomie gaming :</strong> Contrôles intuitifs, personnages reconnaissables</li>
 						</ul>
+						<p><em>📸 Screenshot suggéré : Interface jeu avec plusieurs personnages</em></p>
+					</div>
+					<div class="preuve-item">
+						<strong class="text-accent">📱 TPs IHM Web - Interfaces responsives</strong>
+						<ul>
+							<li><strong>Bootstrap framework :</strong> Grille responsive, composants standards</li>
+							<li><strong>CSS Flexbox :</strong> Layouts adaptatifs, centrage automatique</li>
+							<li><strong>Formulaires HTML5 :</strong> Validation native, types appropriés</li>
+							<li><strong>Modes thème :</strong> Dark/Light mode avec CSS variables</li>
+							<li><strong>Navigation intuitive :</strong> Menus cohérents, breadcrumbs</li>
+						</ul>
+						<p><em>📸 Screenshot suggéré : Site responsive sur mobile et desktop</em></p>
 					</div>
 				</div>
 			</section>
